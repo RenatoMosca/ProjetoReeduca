@@ -16,7 +16,8 @@ class Autor extends Migration
         //
         Schema::create('autor', function (Blueprint $table) {
             $table->bigIncrements('id_autor');
-            $table->string('nome_autor');
+            $table->string('nome_autor')->nullable(false);
+            $table->timestamps();
         });
     }
 

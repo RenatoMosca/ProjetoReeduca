@@ -18,6 +18,7 @@ class Newsletter extends Migration
             $table->bigIncrements('id_newsletters');
             $table->string('email')->unique();
             $table->string('nome');
+            $table->timestamps();
         });
     }
 

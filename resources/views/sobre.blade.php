@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "head.php"; ?>
+@ include ('head')
 <body>
 
-<?php include "header.php"; ?>
+@ include ('header')
      <div class="container">
         <div class="row">
             <div class="col-md-12 titulo-sobre">
@@ -31,8 +31,8 @@
         </div>
     </div>
      
-    
-<?php include "footer.php"; ?>
-<?php include "funcoes.php"; ?>
+@ include ('footer')
+@ include ('funcoes')    
+
 </body>
 </html>

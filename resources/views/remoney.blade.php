@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Remoney - Reeduca</title>
-<?php include "head.php"; ?>
+@ include ('head')
 <body>
  
-<?php include "header.php"; ?>
+@ include ('header')
 
 <section class="conteudo-inteiro-remoney col-lg-12">
     <div class="row remoneyCaixa">
@@ -34,7 +34,7 @@
         
     </div>
 </section>
-<?php include "funcoes.php"; ?>    
-<?php include "footer.php"; ?>
+@ include ('funcoes')
+@ include ('footer')
   </body>
 </html>

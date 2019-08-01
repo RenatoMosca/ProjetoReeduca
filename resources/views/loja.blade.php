@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Lojas - Reeduca</title>
-<?php include "head.php"; ?>
+@ include ('head')
 <body>
  
-<?php include "header.php"; ?>
+@ include ('header')
 
 <section>
 
@@ -63,7 +63,7 @@
 <br>
 </section>
     
-<?php include "footer.php"; ?>
-<?php include "funcoes.php"; ?>
+@ include ('footer')
+@ include ('funcoes')
   </body>
 </html>

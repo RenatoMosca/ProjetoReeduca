@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Contato - Reeduca</title>
-<?php include "head.php"; ?>
+@ include ('head')
 
 <body>
 
-    <?php include "header.php"; ?>
+@ include ('header')
 
 
     <section class="contato-fundo">
@@ -45,8 +45,8 @@
         </div>
 </div>
     </section>
-    <?php include "footer.php"; ?>
-    <?php include "funcoes.php"; ?>
+    @ include ('footer')
+    @ include ('funcoes')
 
 </body>
 

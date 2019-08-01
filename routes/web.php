@@ -18,3 +18,23 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/sobre', function () {
+    return view('sobre');
+});
+
+Route::get('/blog', function () {
+    return view('blog');
+});
+Route::get('/loja', function () {
+    return view('loja');
+});
+Route::get('/EAD', function () {
+    return view('login');
+});
+Route::get('/contato', function () {
+    return view('contato');
+});
+Route::get('/login', function () {
+    return view('login');
+});

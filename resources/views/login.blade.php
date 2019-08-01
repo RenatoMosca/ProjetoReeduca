@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Login - Reeduca</title>
-<?php include "head.php"; ?>
+@ include ('head')
 
 <body>
 
-  <?php include "header.php"; ?>
+  @ include ('header')
 
 
   <section class="fundo-login">
@@ -29,8 +29,8 @@
     </div>
     
   </section>
-  <?php include "footer.php"; ?>
-  <?php include "funcoes.php"; ?>
+  @ include ('footer')
+  @ include ('funcoes')
 
 </body>
 

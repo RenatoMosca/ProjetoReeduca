@@ -16,11 +16,12 @@ class Mensagem extends Migration
         //
         Schema::create('mensagem', function (Blueprint $table) {
             $table->bigIncrements('id_mensagem');
-            $table->string('nome_contato')->nullable();
+            $table->string('nome_contato')->nullable(false);
             $table->date('dt_nascto');
             $table->integer('fone');
             $table->string('email')->unique();
-            $table->text('mensagem')->nullable();
+            $table->text('mensagem')->nullable(false);
+            $table->timestamps();
         });
     }
 

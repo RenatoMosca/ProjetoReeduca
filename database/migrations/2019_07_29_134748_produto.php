@@ -19,12 +19,12 @@ class Produto extends Migration
             $table->string('nome_produto');
             $table->text('desc_produto');
             $table->text('pre_requisitos');
-            $table->string('url_img_prod',292)->nullable();
+            $table->string('url_img_prod',292)->nullable(false);
             $table->integer('carga_horaria');
-            $table->integer('valor')->nullable();
+            $table->integer('valor')->nullable(false);
             $table->string('publico_alvo');
             $table->text('ementa');  
-            // $table->foreign('id_produto')->references('id_produto_autor')->on('produto_autor');          
+            $table->timestamps();
         });
     }
 

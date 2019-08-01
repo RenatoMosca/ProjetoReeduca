@@ -2,9 +2,9 @@
 <html lang="en">
 <title>Home - Reeduca</title>
 
-@include('head')
+@ include('head')
 <body class="home">
-@include('header')
+@ include('header')
 
 <!-- CARROSSEL DA PÁGINA HOME -->
 <section class="carousel">
@@ -51,8 +51,8 @@
 </section>
 
 
-@include('footer')
-
+@ include('footer')
+@ include('funcoes')
 
 </body>
 </html>

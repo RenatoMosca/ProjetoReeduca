@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Blog - Reeduca</title>
-<?php include "head.php"; ?>
-
+@ include ('head')
     <!-- ------------------------------------------------- -->
     <!-- Bloco importado do template -->
     <!-- ------------------------------------------------- -->
@@ -16,7 +15,7 @@
 
 <body>
 
-    <?php include "header.php"; ?>
+@ include ('header')
 
 
 
@@ -155,7 +154,7 @@
                 <div class="row"> 
                     <!--Terceiro Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
-                        <img src="images/card_blog_3.jpg" class="card-img-top" alt="...">
+                        <img src="{{ asset('images/card_blog_3.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -200,8 +199,8 @@
         </section>
     </main>
 
-    <?php include "footer.php"; ?>
-    <?php include "funcoes.php"; ?>
+    @ include ('footer')
+    @ include ('funcoes')
     </body>
     </html>
   

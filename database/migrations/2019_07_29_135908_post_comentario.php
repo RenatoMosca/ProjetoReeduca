@@ -14,13 +14,15 @@ class PostComentario extends Migration
     public function up()
     {
         //
-        Schema::create('post_comentario' function (Blueprint $table) {
+        Schema::create('post_comentario', function (Blueprint $table) {
             $table->bigIncrements('id_post_comentario');            
             $table->string('status');
-            $table->string('nome_autor_comentario')->nullable();
+            $table->string('nome_autor_comentario')->nullable(false);
             $table->string('url_img_comentario');
-            $table->string('comentario',200)->nullable();
+            $table->string('comentario',200)->nullable(false);
             $table->integer('id_post');
+            $table->timestamps();
+            $table->foreign('id_post')->references('id_post')->on('post');
         });
     }
 
@@ -32,6 +34,10 @@ class PostComentario extends Migration
     public function down()
     {
         //
+        Schema::table('post_comentario', function(Blueprint $table){
+            $table->dropForeign('id_post');
+        });
+
         Schema::dropIfExists('post_comentario');
     }
 }

@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+  }
+
+
+  /* PÁGINA - HOME */
+.home-page{
+    background-image: url('../images/fundo2-home.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    right: 0;
+    text-align: right;
+    max-width: 100%;
+}
+
+/* CARROSSEL */
+.imgcarrossel{
+    height: 400px;
+}
+
+/* MENU */
+#menu_hamburger{
+    display: none;
+    background-color: #E6E6E6;
+    color: white;
+}
+#menu_hamburger ul{
+    list-style-type: none;
+}
+#menu_hamburger a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+}
+#menu_hamburger li{
+    list-style-type: none;
+    line-height: 35px;
+}
+.itensMenu{
+    position: relative;
+}
+.navbar-nav{
+    text-align: right;    
+    padding: 0;       
+}   
+
+
+/* PÁGINA SOBRE */
+.titulo-sobre{
+    background-image:  url('../images/educacao-ambiental-1.jpg');
+    background-repeat: no-repeat;
+    width: 827px;
+    height: 297px;
+    background-size: cover;
+    opacity: initial;
+    border-width: 2px;
+    border-color: rgba(8, 8, 8, 0.664);
+    border-style: solid;
+    display: inline-block;
+
+}
+.h1-sobre{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 64px;
+    position: relative;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: white;
+    top: 37%;
+    left: 0%;
+    font-stretch: extra-expanded;
+
+}
+.h2-reeduca-sobre{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align: center;
+    top: 37%;
+    margin: 5%;
+}
+.img-sobre-txt{
+    background-image: url('../images/reciclagem.jpg');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 350px;
+    background-size: 60%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto-sobre-2{
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media  (max-width: 768px){
+    .h1-sobre{
+        top: 36%;
+    }
+}
+@media  (max-width: 540px){
+    .h1-sobre{
+        top: 7%;
+    }
+    .img-sobre-txt{
+        background-repeat: no-repeat;
+        width: 125px;
+        height: 60vh;
+        background-size: 60%;
+        background-position: center;
+    }
+}
+
+/* FINAL PÁGINA SOBRE  */
+
+/* PÁGINA LOJA */
+.display-4{
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 2em;     
+}
+
+section.fundo-login{
+    height: 482px;    
+    padding: 30px;         
+}
+.jumbotron{
+    background-color: #73C72B;
+}
+.jumbotron.container{
+    text-align: center;     
+}
+/* FINAL PÁGINA LOJA */
+
+/* PÁGINA DETALHE-CURSO */
+.detalhe-produto{
+    margin-top: 25px;
+}
+/* FINAL DETALHE-CURSO */
+
+/* PÁGINA REMONEY */
+.descricao-remoney{
+    height: 450px; 
+    color: #707175;  
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 26px;         
+}
+.conteudo-inteiro-remoney{
+    display: flex;
+}
+.descricao-vantagem-remoney{
+    margin-bottom: 16px;  
+    height: 74vh;
+    color: grey;   
+    padding-top: 46px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify;
+    line-height: 33px;      
+}
+.remoneyCaixa{
+    margin-bottom: 70px;
+}
+#vantagem{
+    color:#73C72B;
+    text-transform: uppercase;
+    font-size: large;
+    color: black;
+    text-transform: uppercase;
+    font-size: xx-large;
+    border: solid -7px grey;
+    border-radius: -8px;
+    text-align: center;
+    box-shadow: 1px 1px 11px 1px grey;
+    background-color: #D8D8D8;
+}
+.conteudo-texto-remoney{
+    margin-top: 40px;
+}
+.imagem-conheca-remoney{
+    padding-top: 44px;
+}
+/* FINAL PÁGINA REMONEY */
+
+/* PÁGINA CONTATO */
+.imagem_fundo_contato{
+    background-image: url('../images/bg-contato.jpg');
+    background-size: 1400px;     
+}
+.ladoDireito{
+    padding-top: 52px;
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.ladoEsquerdo{
+    padding-top: 213px;
+    text-align: center;
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.form_contato1{
+    padding-top: 5px;  
+}
+.botao_contato{
+    padding-bottom: 74px;
+    padding-top: 27px;
+}
+/* FINAL PÁGINA CONTATO */
+
+/* FOOTER */
+footer { 
+    background-color: #73C72B;
+    bottom:0;
+    width:100%;
+}
+.footer-copyright p{
+    padding-left: 47px;    
+    padding-top: 25px;
+    color: white;
+}
+
+<<<<<<< HEAD
+@media  (max-width: 780px) {
+    .home-page {
+      background: none;
+      overflow: auto;
+    }
+
+    .imgcarrossel {
+        height: 242px;
+    }
+=======
+p {
+    font-family: 'Alegreya', serif;
+    font-size: 1.2em; 
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2em;
+>>>>>>> 75644b265d403208f5385032ef9899670ff44eb8
+}

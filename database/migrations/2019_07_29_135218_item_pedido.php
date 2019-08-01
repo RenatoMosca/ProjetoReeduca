@@ -19,6 +19,10 @@ class ItemPedido extends Migration
             $table->integer('id_pedido');
             $table->integer('id_produto');
             $table->integer('valor');
+            $table->timestamps();
+            $table->foreign('id_produto')->references('id_produto')->on('produto');
+            $table->foreign('id_pedido')->references('id_pedido')->on('pedido');
+            
         });
     }
 
@@ -30,6 +34,13 @@ class ItemPedido extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('item_pedido');
+
+        Schema::table('item_pedido', function(Blueprint $table){
+            $table->dropForeign('id_produto');
+            $table->dropForeign('id_pedido');
+        });
+
+        Schema::dropIfExists('item_pedido');   
+        
     }
 }

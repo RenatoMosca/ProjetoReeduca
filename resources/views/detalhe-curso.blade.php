@@ -2,10 +2,10 @@
 <html lang="en">
 <title>Cursos - Reeduca</title>
 	
-<?php include "head.php"; ?>
+@ include ('head')
 <body>
  
-<?php include "header.php"; ?>
+@ include ('header')
 
 			<!-- -->
 			<section class="detalhe-produto">
@@ -75,7 +75,7 @@
 			</section>
 			<!-- -->
 
-			<?php include "funcoes.php"; ?>    
-			<?php include "footer.php"; ?>
+			@ include ('funcoes')
+			@ include ('footer')
   </body>
 </html>

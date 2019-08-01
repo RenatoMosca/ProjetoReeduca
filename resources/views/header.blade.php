@@ -21,22 +21,22 @@
             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobre.php">Sobre</a>
+            <a class="nav-link" href="/sobre">Sobre</a>
           </li>        
           <li class="nav-item">
-            <a class="nav-link" href="blog-bkp.php">Blog</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="loja.php">Loja</a>
+            <a class="nav-link" href="/loja">Loja</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">EAD</a>
+            <a class="nav-link" href="/login">EAD</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contato2.php">Contato</a>
+            <a class="nav-link" href="/contato">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Login</a>
+            <a class="nav-link" href="/login">Login</a>
           </li>     
         
         </ul>

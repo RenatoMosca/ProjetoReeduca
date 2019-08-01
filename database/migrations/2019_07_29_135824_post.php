@@ -14,14 +14,17 @@ class Post extends Migration
     public function up()
     {
         //
-        Schema::create('post' function (Blueprint $table) {
+        Schema::create('post', function (Blueprint $table) {
             $table->bigIncrements('id_post');            
-            $table->string('titulo')->nullable();
-            $table->string('url_img_post')->nullable();
-            $table->string('nome_autor_post')->nullable();
+            $table->string('titulo')->nullable(false);
+            $table->string('url_img_post')->nullable(false);
+            $table->string('nome_autor_post')->nullable(false);
             $table->string('desc_breve');
-            $table->text('artigo')->nullable();
-            $table->integer('id_categoria')->nullable();
+            $table->text('artigo')->nullable(false);
+            $table->integer('id_categoria');
+            $table->timestamps();
+            $table->foreign('id_categoria')->references('id_categoria')->on('categoria');
+            
         });
     }
 
@@ -33,6 +36,11 @@ class Post extends Migration
     public function down()
     {
         //
+
+        Schema::table('post', function(Blueprint $table){
+            $table->dropForeign('id_categoria');
+        });
+
         Schema::dropIfExists('post');
     }
 }

@@ -18,6 +18,10 @@ class ProdutoAutor extends Migration
             $table->bigIncrements('id_produto_autor');
             $table->integer('id_produto');
             $table->integer('id_autor');
+            $table->timestamps();
+            $table->foreign('id_produto')->references('id_produto')->on('produto');
+            $table->foreign('id_autor')->references('id_autor')->on('autor');
+
         });
     }
 
@@ -29,6 +33,13 @@ class ProdutoAutor extends Migration
     public function down()
     {
         //
+
+        Schema::table('produto_autor', function(Blueprint $table){
+            $table->dropForeign('id_produto');
+            $table->dropForeign('id_autor');
+        });
+
         Schema::dropIfExists('produto_autor');
     }
+
 }

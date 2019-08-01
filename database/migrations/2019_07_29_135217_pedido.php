@@ -20,6 +20,7 @@ class Pedido extends Migration
             $table->integer('id_usuario');
             $table->string('forma_pagto');
             $table->integer('nr_parcelas');
+            $table->timestamps();
         });
     }
 
