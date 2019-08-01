@@ -19,8 +19,8 @@ class Usuario extends Migration
             $table->string('nome_usuario');
             $table->string('email')->unique();
             $table->integer('fone');
-            $table->integer('cpf',11)->nullable(false);
-            $table->integer('cep',8)->nullable(false);
+            $table->integer('cpf')->unique()->nullable(false);
+            $table->integer('cep');
             $table->string('logradouro')->nullable(false);
             $table->integer('nr')->nullable(false);
             $table->string('complemento');
@@ -30,8 +30,6 @@ class Usuario extends Migration
             $table->string('senha')->nullable(false);
             $table->integer('id_usuario_ava');
             $table->timestamps();
-            $table->foreign('id_usuario')->references('id_usuario')->on('pedido');
-            
         });
     }
 
@@ -43,9 +41,6 @@ class Usuario extends Migration
     public function down()
     {
         //
-        Schema::table('usuario', function(Blueprint $table){
-            $table->dropForeign('id_usuario');
-        });
 
         Schema::dropIfExists('usuario');
     }

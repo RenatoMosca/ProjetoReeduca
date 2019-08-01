@@ -16,8 +16,8 @@ class ProdutoAutor extends Migration
         //
         Schema::create('produto_autor', function (Blueprint $table) {
             $table->bigIncrements('id_produto_autor');
-            $table->integer('id_produto');
-            $table->integer('id_autor');
+            $table->bigInteger('id_produto')->unsigned();
+            $table->bigInteger('id_autor')->unsigned();
             $table->timestamps();
             $table->foreign('id_produto')->references('id_produto')->on('produto');
             $table->foreign('id_autor')->references('id_autor')->on('autor');

@@ -23,7 +23,7 @@ class Produto extends Migration
             $table->integer('carga_horaria');
             $table->integer('valor')->nullable(false);
             $table->string('publico_alvo');
-            $table->text('ementa');  
+            $table->text('ementa');
             $table->timestamps();
         });
     }
