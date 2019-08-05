@@ -3,11 +3,6 @@
 <title>Lojas - Reeduca</title>
 @include ('head')
 <body>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 56bc96117a35f9fa149c9c1df234ed0efadff82c
 @include ('header')
 
 <section class = "texto-loja" col-lg-12>
@@ -67,11 +62,6 @@
 </div>
 <br>
 </section>
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 56bc96117a35f9fa149c9c1df234ed0efadff82c
 @include ('footer')
 @include ('funcoes')
   </body>
