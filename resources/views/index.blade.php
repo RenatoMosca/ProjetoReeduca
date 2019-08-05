@@ -2,9 +2,9 @@
 <html lang="en">
 <title>Home - Reeduca</title>
 
-@ include('head')
+@include('head')
 <body class="home">
-@ include('header')
+@include('header')
 
 <!-- CARROSSEL DA PÁGINA HOME -->
 <section class="carousel">
@@ -40,19 +40,19 @@
             <h5 style ="color: #73C72B; font-family: 'Cinzel', serif; font-size: 40px; text-align: -webkit-auto; text-decoration: overline;">Você tem o poder</h5>
             <p style="font-size: larger; font-family: 'Alegreya', serif; text-align: justify; line-height: 43px;">
             Se você acredita em um mundo saudável, pacífico, digno e justo para todos, então estamos ao seu lado para alcançá-lo, seja agindo nas ruas, na internet, em pequenas comunidades, nas grandes salas do poder ou nos locais mais remotos do planeta. Se tem ideias para chegarmos lá mais rápido, queremos aprender com você. Vamo sonhar, planejar e agir juntos.</p>
-        </div>   
+        </div>
         <div class="comece col-lg-4">
             <button type="button" class="btn btn-success comece" onclick="javascript: location.href='remoney.php';">Comece hoje</button>
         </div>
         <div class="conheca col-lg-4">
             <a href="remoney.php"><img class="img-money" src="{{ asset('images/dinheirinho.png')}}" alt="conheca-nosso-programa"></a>
-        </div>  
-    </div> 
+        </div>
+    </div>
 </section>
 
 
-@ include('footer')
-@ include('funcoes')
+@include('footer')
+@include('funcoes')
 
 </body>
 </html>

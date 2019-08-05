@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-@ include ('head')
+@include ('head')
 <body>
 
-@ include ('header')
+@include ('header')
      <div class="container">
         <div class="row">
             <div class="col-md-12 titulo-sobre">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md img-sobre-txt">
@@ -30,9 +30,9 @@
             </div>
         </div>
     </div>
-     
-@ include ('footer')
-@ include ('funcoes')    
+
+@include ('footer')
+@include ('funcoes')
 
 </body>
 </html>

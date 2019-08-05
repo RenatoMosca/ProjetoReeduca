@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Lojas - Reeduca</title>
-@ include ('head')
+@include ('head')
 <body>
- 
-@ include ('header')
+
+@include ('header')
 
 <section>
 
@@ -62,8 +62,8 @@
 </div>
 <br>
 </section>
-    
-@ include ('footer')
-@ include ('funcoes')
+
+@include ('footer')
+@include ('funcoes')
   </body>
 </html>

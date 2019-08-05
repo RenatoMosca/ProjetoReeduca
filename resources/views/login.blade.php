@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Login - Reeduca</title>
-@ include ('head')
+@include ('head')
 
 <body>
 
-  @ include ('header')
+  @include ('header')
 
 
   <section class="fundo-login">
@@ -27,10 +27,10 @@
         </form>
       </div>
     </div>
-    
+
   </section>
-  @ include ('footer')
-  @ include ('funcoes')
+  @include ('footer')
+  @include ('funcoes')
 
 </body>
 
