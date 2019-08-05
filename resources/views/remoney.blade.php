@@ -3,7 +3,11 @@
 <title>Remoney - Reeduca</title>
 @include ('head')
 <body>
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 56bc96117a35f9fa149c9c1df234ed0efadff82c
 @include ('header')
 
 <section class="conteudo-inteiro-remoney col-lg-12">

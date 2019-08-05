@@ -3,15 +3,19 @@
 <title>Lojas - Reeduca</title>
 @include ('head')
 <body>
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 56bc96117a35f9fa149c9c1df234ed0efadff82c
 @include ('header')
 
-<section>
+<section class = "texto-loja" col-lg-12>
 
 <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1  class="display-4">Reeduca Cursos</h1>
-    <p style="font-family: 'Alegreya', serif" class="lead">Porque a mudança começa primeiro em você</p>
+  <div class="container texto-titulo ">
+    <h1>Reeduca Cursos</h1>
+    <p>Porque a mudança <br>começa primeiro </br>em você</p>
   </div>
 </div>
 
@@ -20,6 +24,7 @@
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
+        <div class="card-img1"></div>
         <h5 style="font-family: 'Domine', serif;" class="card-title"><i class="fas fa-recycle"></i>  Gestão de resíduos plásticos pós-consumo</h5>
         <p class="card-text">Um olhar para o fututo do processo no Brasil. Melhores soluções e aplicações.</p>
         <a href="detalhe-curso.php?id=1" class="btn btn-primary">Veja os detalhes</a>
@@ -62,7 +67,11 @@
 </div>
 <br>
 </section>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 56bc96117a35f9fa149c9c1df234ed0efadff82c
 @include ('footer')
 @include ('funcoes')
   </body>

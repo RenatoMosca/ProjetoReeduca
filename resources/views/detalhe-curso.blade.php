@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Cursos - Reeduca</title>
+<<<<<<< HEAD
 
 @include ('head')
 <body>
 
+=======
+	
+@include ('head')
+<body>
+ 
+>>>>>>> 56bc96117a35f9fa149c9c1df234ed0efadff82c
 @include ('header')
 
 			<!-- -->
