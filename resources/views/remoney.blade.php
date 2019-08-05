@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Remoney - Reeduca</title>
-@ include ('head')
+@include ('head')
 <body>
  
-@ include ('header')
+@include ('header')
 
 <section class="conteudo-inteiro-remoney col-lg-12">
     <div class="row remoneyCaixa">
@@ -34,7 +34,7 @@
         
     </div>
 </section>
-@ include ('funcoes')
-@ include ('footer')
+@include ('funcoes')
+@include ('footer')
   </body>
 </html>

@@ -25,6 +25,7 @@ class Produto extends Migration
             $table->string('publico_alvo');
             $table->text('ementa');
             $table->timestamps();
+           
         });
     }
 

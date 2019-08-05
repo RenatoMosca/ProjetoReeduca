@@ -17,7 +17,29 @@
     text-align: right;
     max-width: 100%;
 }
-
+.home-page h2{
+    font-size: 2em;
+    text-align: initial; 
+    padding-bottom: 31px
+}
+.home-page i{
+    color: #73C72B; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    font-weight: bold;
+}
+.home-page h5{
+    color: #73C72B; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    font-size: 2em;
+    text-align: -webkit-auto; 
+    text-decoration: overline;
+}
+.home-page p{
+    font-size: larger; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    text-align: justify; 
+    line-height: 40px;
+}
 /* CARROSSEL */
 .imgcarrossel{
     height: 400px;
@@ -52,44 +74,68 @@
 
 
 /* PÁGINA SOBRE */
-.titulo-sobre{
+.home-sobre{
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background-img{
     background-image:  url('../images/educacao-ambiental-1.jpg');
     background-repeat: no-repeat;
-    width: 827px;
-    height: 297px;
+    height: 400px;
     background-size: cover;
     opacity: initial;
-    border-width: 2px;
-    border-color: rgba(8, 8, 8, 0.664);
-    border-style: solid;
-    display: inline-block;
-
-}
-.h1-sobre{
-    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 64px;
-    position: relative;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    color: white;
-    top: 37%;
-    left: 0%;
-    font-stretch: extra-expanded;
+   
+}
+.home-sobre h2{
+    font-size: 2em;
+    text-align: initial; 
+   
+    padding-bottom: 31px;
+}
+.home-sobre i{
+    color: #73C72B; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    font-weight: bold;
+}
+.home-sobre h5{
+    color: #73C72B; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    font-size: 2em;
+    text-align: -webkit-auto; 
+    text-decoration: overline;
+}
+.home-sobre p{
+    font-size: larger; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    text-align: justify; 
+    line-height: 40px;
+}
+.background-recicla{
+    background-image: url('../images/reciclagem.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 46%;
+ }
 
-}
-.h2-reeduca-sobre{
-    font-family: 'Cinzel', serif;
-    font-size: 50px;
-    text-align: center;
-    top: 37%;
-    margin: 5%;
-}
-.img-sobre-txt{
+
+
+
+
+
+
+
+/* .h2-reeduca-sobre{
+    padding-top: 60px;
+    color: #73C72B;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 2em;
+    text-align: -webkit-auto;
+    text-decoration: overline; */
+/* } */
+/* .img-sobre-txt{
     background-image: url('../images/reciclagem.jpg');
     background-repeat: no-repeat;
     width: 120px;
@@ -98,16 +144,19 @@
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     
-}
-.texto-sobre-2{
-    font-family: 'Alegreya', serif;
-    font-size: 25px;
-    text-align: center;
-}
 
-@media  (max-width: 768px){
+/* .texto-sobre-2{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: larger; 
+    text-align: center;
+    line-height: 40px;
+    text-align: justify;
+} */
+
+
+/* @media  (max-width: 768px){
     .h1-sobre{
         top: 36%;
     }
@@ -123,15 +172,27 @@
         background-size: 60%;
         background-position: center;
     }
-}
+} */
 
 /* FINAL PÁGINA SOBRE  */
 
 /* PÁGINA LOJA */
-.display-4{
-    font-family: 'Cinzel', serif;
+.texto-titulo h1{   
+    font-size: 2em;
+    text-align: initial;        
+    padding-bottom: 31px;    
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-transform: uppercase;
-    font-size: 2em;     
+    font-size: 2em;    
+    text-align: left; 
+}
+
+.texto-titulo  p{
+    color: rgb(247, 250, 244); 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    font-size: 2em;
+    text-align: -webkit-auto; 
+    text-decoration: overline;
 }
 
 section.fundo-login{
@@ -139,7 +200,14 @@ section.fundo-login{
     padding: 30px;         
 }
 .jumbotron{
-    background-color: #73C72B;
+    background-image: url('../images/cursos1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    opacity: initial;
+    display: flex;
+
 }
 .jumbotron.container{
     text-align: center;     
@@ -156,7 +224,7 @@ section.fundo-login{
 .descricao-remoney{
     height: 450px; 
     color: #707175;  
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-align: justify;
     line-height: 26px;         
 }
@@ -168,7 +236,7 @@ section.fundo-login{
     height: 74vh;
     color: grey;   
     padding-top: 46px; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-align: justify;
     line-height: 33px;      
 }
@@ -193,7 +261,10 @@ section.fundo-login{
 }
 .imagem-conheca-remoney{
     padding-top: 44px;
+
 }
+
+
 /* FINAL PÁGINA REMONEY */
 
 /* PÁGINA CONTATO */
@@ -235,7 +306,6 @@ footer {
     color: white;
 }
 
-<<<<<<< HEAD
 @media  (max-width: 780px) {
     .home-page {
       background: none;
@@ -245,14 +315,13 @@ footer {
     .imgcarrossel {
         height: 242px;
     }
-=======
-p {
-    font-family: 'Alegreya', serif;
-    font-size: 1.2em; 
-}
+    .background-recicla{     
+        background: none;
+        overflow: auto;
+        display: none;
+    }
+       
 
-h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 2.2em;
->>>>>>> 75644b265d403208f5385032ef9899670ff44eb8
-}
+    }
+    
+ 
