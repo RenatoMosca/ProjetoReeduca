@@ -23,11 +23,12 @@
           <li class="nav-item">
             <a class="nav-link" href="/sobre">Sobre</a>
           </li>        
-          <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
-          </li>
+        
           <li class="nav-item">
             <a class="nav-link" href="/loja">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/login">EAD</a>

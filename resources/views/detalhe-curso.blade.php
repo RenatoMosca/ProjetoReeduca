@@ -2,10 +2,10 @@
 <html lang="en">
 <title>Cursos - Reeduca</title>
 	
-@ include ('head')
+@include ('head')
 <body>
  
-@ include ('header')
+@include ('header')
 
 			<!-- -->
 			<section class="detalhe-produto">

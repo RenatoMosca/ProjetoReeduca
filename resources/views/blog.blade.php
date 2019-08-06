@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Blog - Reeduca</title>
-@ include ('head')
+@include ('head')
     <!-- ------------------------------------------------- -->
     <!-- Bloco importado do template -->
     <!-- ------------------------------------------------- -->
@@ -15,7 +15,7 @@
 
 <body>
 
-@ include ('header')
+@include ('header')
 
 
 
@@ -199,8 +199,8 @@
         </section>
     </main>
 
-    @ include ('footer')
-    @ include ('funcoes')
+    @include ('footer')
+    @include ('funcoes')
     </body>
     </html>
   

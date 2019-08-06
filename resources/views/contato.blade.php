@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Contato - Reeduca</title>
-@ include ('head')
+@include ('head')
 
 <body>
 
-@ include ('header')
+@include ('header')
 
 
     <section class="contato-fundo">
@@ -45,8 +45,8 @@
         </div>
 </div>
     </section>
-    @ include ('footer')
-    @ include ('funcoes')
+    @include ('footer')
+    @include ('funcoes')
 
 </body>
 
