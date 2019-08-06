@@ -12,8 +12,6 @@
     </div>
 </section>
 
-
-
 <section>
     <div class="home-sobre">
         <div class="conteudo-texto col-lg-4">

@@ -38,3 +38,11 @@ Route::get('/contato', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+//-----testes
+Route::get('/h', function () {
+    return view('welcome');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
