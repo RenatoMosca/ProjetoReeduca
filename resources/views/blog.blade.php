@@ -22,7 +22,7 @@
     <main class="container">
 
         <section class="blog row">
-            
+
 <!--Coluna lado esquerdo-->
 
             <div class="textoBlog col-lg-3">
@@ -57,9 +57,9 @@
 								</ul>
 								<!-- /side navigation -->
 
-							
+
 							</div>
-							
+
 
 
 							<!-- TAGS -->
@@ -90,7 +90,7 @@
 									<span class="txt">DEVELOPMENT</span>
 									<span class="num">3</span>
 								</a>
-							</div>						
+							</div>
 
 
 							<!-- SOCIAL ICONS -->
@@ -121,16 +121,16 @@
 								</a>
 							</div>
 
-						</div>						
+						</div>
 
             </div>
 
 
 
-            
+
             <div class="posts col-lg-9 ">
 
-                <div class="row"> 
+                <div class="row">
                     <!--Primeiro Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
                         <img src="images/card_blog_1.jpg"  class="card-img-top" alt="Reciclagem">
@@ -138,7 +138,7 @@
                             <h5 class="card-title">Reciclar pra quê</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
-                        </div>                    
+                        </div>
                     </div>
                     <!--Segundo Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
@@ -148,10 +148,10 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="row"> 
+                <div class="row">
                     <!--Terceiro Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
                         <img src="{{ asset('images/card_blog_3.jpg')}}" class="card-img-top" alt="...">
@@ -160,7 +160,7 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</p>
-                        </div>                   
+                        </div>
                     </div>
                     <!--Quarto Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
@@ -170,7 +170,7 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -203,4 +203,3 @@
     @include ('funcoes')
     </body>
     </html>
-  

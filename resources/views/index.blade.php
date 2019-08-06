@@ -40,14 +40,14 @@
             <h5>Você tem o poder</h5>
             <p>
             Se você acredita em um mundo saudável, pacífico, digno e justo para todos, então estamos ao seu lado para alcançá-lo, seja agindo nas ruas, na internet, em pequenas comunidades, nas grandes salas do poder ou nos locais mais remotos do planeta. Se tem ideias para chegarmos lá mais rápido, queremos aprender com você. Vamo sonhar, planejar e agir juntos.</p>
-        </div>   
+        </div>
         <div class="comece col-lg-4">
             <button type="button" class="btn btn-success comece" onclick="javascript: location.href='remoney.php';">Comece hoje</button>
         </div>
         <div class="conheca col-lg-4">
             <a href="remoney.php"><img class="img-money" src="{{ asset('images/dinheirinho.png')}}" alt="conheca-nosso-programa"></a>
-        </div>  
-    </div> 
+        </div>
+    </div>
 </section>
 
 

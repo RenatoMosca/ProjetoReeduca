@@ -24,17 +24,17 @@
                         <label for="idade">Idade</label>
                         <input type="number" class="form-control" id="idade" placeholder="Digite sua idade">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
                         <input type="number" class="form-control" id="telefone" placeholder="Digite seu telefone">
-                    </div>           
+                    </div>
 
 
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    
+
 
                     <div class="botao_contato">
                         <button type="button" class="button">Enviar</button>

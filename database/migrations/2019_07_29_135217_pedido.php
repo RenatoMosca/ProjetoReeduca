@@ -17,12 +17,12 @@ class Pedido extends Migration
         Schema::create('pedido', function (Blueprint $table) {
             $table->bigIncrements('id_pedido');
             $table->string('status');
-            $table->bigInteger('id_usuario')->unsigned();
+            $table->bigInteger('id')->unsigned();
             $table->string('forma_pagto');
             $table->integer('nr_parcelas');
             $table->timestamps();
 
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuario');
+            $table->foreign('id')->references('id')->on('users');
         });
     }
 
@@ -36,7 +36,7 @@ class Pedido extends Migration
         //
 
         Schema::table('pedido', function(Blueprint $table){
-            $table->dropForeign('id_usuario');
+            $table->dropForeign('id');
         });
 
         Schema::dropIfExists('pedido');

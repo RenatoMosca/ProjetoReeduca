@@ -28,45 +28,14 @@
                        
         </div>   
 
-        <!-- <div class="comece col-lg-4">
-            <button type="button" class="btn btn-success comece" onclick="javascript: location.href='remoney.php';">Comece hoje</button>
-        </div> -->
-        <!-- <div class="conheca col-lg-4">
-            <a href="remoney.php"><img class="img-money" src="{{ asset('images/dinheirinho.png')}}" alt="conheca-nosso-programa"></a>
-        </div>   -->
-    </div> 
+
+    </div>
 </section>
 
-    <!-- <div class="container img-sobre col-lg-12">
-        <div class="row">
-            <div class="col-md-12 texto-sobre">
-                <h2>Melhor aprendizado é igual qualidade de vida</h2>
-                <h5>Sobre a Reeduca</h5>
-            </div>
-        </div>
-    </div>
+  
 
-   
-              
-   
-                
-
-
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md img-sobre-txt">
-
-            </div>
-            <div class="col-md texto-sobre-2">
-                <p>Se você em um mundo saudavel, pacífico, digno e justo para todos, então estamos ao seu lado para alcança-lo, seja aguindo nas rua, na internet, em pequenas comunidades, nas grandes salas do poder ou nos locais mais remotos do planeta. Se tem ideias para chegarmaos lá mais rapido, queremos aprender com você. Vamos sonhar, planejar e agir juntos.</p>
-            </div>
-        </div>
-    </div> -->
-     
 @include ('footer')
-@include ('funcoes')    
+@include ('funcoes')
 
 </body>
 </html>

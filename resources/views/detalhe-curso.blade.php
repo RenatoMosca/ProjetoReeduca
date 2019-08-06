@@ -12,7 +12,7 @@
 				<div class="container">
 
 					<div class="row nomargin">
-						
+
 						<div class="col-md-8 col-sm-8">
 
 							<!-- Subtitle -->
@@ -40,13 +40,13 @@
 							</div>
 							<!-- /Pre-requisitos -->
 							<p>Este curso não tem pre-requisitos. Qualquer pessoa pode praticar os exercícios aqui apresentados.</p>
-						
+
 						</div>
 
-						
+
 						<div class="col-md-4 col-sm-4">
-						
-            
+
+
               <div class="card">
                 <div class="card-body">
 
@@ -55,7 +55,7 @@
                   <?php else: ?>
                     <img src="images/curso-2.jpg" alt="curso-residuos"><br>
                   <?php endif; ?>
-                  
+
                   <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
@@ -75,7 +75,7 @@
 			</section>
 			<!-- -->
 
-			@ include ('funcoes')
-			@ include ('footer')
+			@include ('funcoes')
+			@include ('footer')
   </body>
 </html>

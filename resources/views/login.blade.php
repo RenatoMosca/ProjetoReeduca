@@ -27,7 +27,7 @@
         </form>
       </div>
     </div>
-    
+
   </section>
   @include ('footer')
   @include ('funcoes')
