@@ -38,13 +38,22 @@ Route::get('/contato', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/admin/teste', function () {
+    return view('admin.cadastrar_post');
+});
+
+
+
 
 Route::get('/admin', function () {
     return view('admin.index');
 });
 
+
+
 //controllers admin
 Route::get('/admin/post', 'PostController@exibirTodos');
+Route::get('/admin/post', 'PostController@create');
 
 
 //-----testes
