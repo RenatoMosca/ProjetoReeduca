@@ -53,7 +53,7 @@ Route::get('/admin', function () {
 
 //controllers admin
 Route::get('/admin/post', 'PostController@exibirTodos');
-Route::get('/admin/post', 'PostController@create');
+Route::post('/admin/post/cadastrar', 'PostController@create');
 
 
 //-----testes
