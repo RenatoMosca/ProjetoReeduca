@@ -61,4 +61,14 @@ Route::post('/admin/post/cadastrar', 'PostController@create');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/post', 'PostController@exibirTodos');
+
+
+//Comentarios
+//visualizar todos
+Route::get('/admin/post_comentario', 'Post_comentarioController@exibirTodosComentarios');
+//fornulario de envio
+Route::get('/admin/comentario_teste', 'Post_comentarioController@cadastroComentario');
+//enviar dados
+Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name('comentarioadm');
 
