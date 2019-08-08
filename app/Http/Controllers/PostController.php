@@ -11,25 +11,34 @@ class PostController extends Controller
 
     public function exibirTodos(){
         $posts = Post::all();
-        return view('admin.post',['post'=>$posts]);
+        return view('admin.post',['posts'=>$posts]);
     }
-
-     //método criar um post
-    protected function create(array $data){
+     
+     //passo 1
+    public function cadastrar(){
+          
+         return view('admin.cadastrar_post');
+     }
+    
+      //passo 2     
+    
+    public function create(Request $request){
    
+        $post = new Post();
 
-        return Post::create([
-            'id_post' => $data['id_post'],
-            'titulo' => $data['titulo'],
-            'url_img_post' => $data['url_img_post'],
-            'nome_autor_post' => $data['nome_autor_post'],
-            'desc_breve' => $data['desc_breve'],
-            'artigo' => $data['artigo'],
-            'id_categoria' => $data['id_categoria'],
-            
-            // 'id_usuario_ava'=> $data['id_usuario_ava'],
-        ]);
+        $post->titulo = $request->titulo;
+        $post->url_img_post = $request->url_img_post;
+        $post->nome_autor_post = $request->nome_autor_post;
+        $post->desc_breve = $request->desc_breve;
+        $post->artigo = $request->artigo;
+        // $post->dt_inclusão = $request->dt_inclusão;
+        $post->id_categoria = 1;
+        $post->save();          
+           
+        return redirect('/admin/post');
         }
+
+
 
     //método editar um post
 
@@ -42,10 +51,10 @@ class PostController extends Controller
 
 public function update($id) {
     $posts = Post::find($id);
-    $posts ->titulo = Input::get('titulo');
-    $posts ->nome_autor_post = Input::get('nome_autor_post');
-    $posts ->desc_breve = Input::get('desc_breve');
-    $posts ->id_categoria = Input::get('id_categoria');
+    $posts ->titulo = Input::post('titulo');
+    $posts ->nome_autor_post = Input::post('nome_autor_post');
+    $posts ->desc_breve = Input::post('desc_breve');
+    $posts ->id_categoria = Input::post('id_categoria');
     $posts ->save();    
     return Redirect::to('post')->with('notice', 'El usuario ha sido modificado correctamente.');
  }

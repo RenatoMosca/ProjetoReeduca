@@ -2,9 +2,55 @@
 
 
 @section('conteudo_admin')
-@if(isset($posts))
-    @foreach($posts as $post)
-    {{$post}}
-    @endforeach
-@endif
+@foreach($posts as $post)
+{{$post}}
+@endforeach
 @endsection
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+<div class="row">
+<div class="col-md-12">
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</!--> -->
