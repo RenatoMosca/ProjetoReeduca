@@ -57,6 +57,7 @@ Route::get('/admin/post/cadastrar','PostController@cadastrar');
 Route::post('/admin/post/create','PostController@create');
 
 
+
 //-----testes
 
 Auth::routes();
