@@ -2,12 +2,16 @@
 <body>
 
 
+@crsf
   <form name="cadastrar_post" type="text" method="post" enctype="multipart/form-data" action="/admin/post/cadastrar">
- @crsf
-    Imagem: <input type="file" name="image" /></br> <input type="submit" value="Enviar" name="envia" />
+
+  Imagem: <input type="file" name="image" /></br> <input type="submit" value="Enviar" name="envia" />
   Título: <input type="text" name="titulo"></br>
   Nome do autor: <input type="text" name="nome_autor_post"></br>
-  Descrição breve: <input type="text" name="desc_breve"></br>
+   <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>c
   Artigo completo: <input type="text" name="artigo"></br>
   Categorias: <br>
 

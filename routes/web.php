@@ -38,39 +38,40 @@ Route::get('/contato', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/admin/teste', function () {
-    return view('admin.cadastrar_post');
-});
 
 
+//Controllers Admin: Post do Blog
 
-
+//visualização do painel admin
 Route::get('/admin', function () {
     return view('admin.index');
 });
 
-
-
-//controllers admin
+//visualização dos posts no painel admin
 Route::get('/admin/post', 'PostController@exibirTodos');
+
+//visualização do formulário
 Route::get('/admin/post/cadastrar','PostController@cadastrar');
+//Porque não tem a visualização dessa rota? Ela é necessária?
 Route::post('/admin/post/create','PostController@create');
 
+Route::get('/admin/post/edit/{id}','PostController@edit');
 
+//Controllers Admin: Comentários do Blog
 
-//-----testes
+//visualizar todos
+Route::get('/admin/post_comentario', 'Post_comentarioController@exibirTodos');
+//fornulario de envio
+Route::get('/admin/comentario_teste/{id}', 'Post_comentarioController@cadastroComentario');
+//enviar dados
+Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name('comentarioadm');
 
+//Controllers Auth
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin/post', 'PostController@exibirTodos');
 
 
-//Comentarios
-//visualizar todos
-Route::get('/admin/post_comentario', 'Post_comentarioController@exibirTodosComentarios');
-//fornulario de envio
-Route::get('/admin/comentario_teste', 'Post_comentarioController@cadastroComentario');
-//enviar dados
-Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name('comentarioadm');
+
+
 

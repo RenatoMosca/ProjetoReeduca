@@ -47,16 +47,16 @@ class PostController extends Controller
         return view('admin.post',['posts'=>$posts]);
          }
 
-//método update um post
+    //método update um post
 
-public function update($id) {
+    public function update($id) {
     $posts = Post::find($id);
     $posts ->titulo = Input::post('titulo');
     $posts ->nome_autor_post = Input::post('nome_autor_post');
     $posts ->desc_breve = Input::post('desc_breve');
     $posts ->id_categoria = Input::post('id_categoria');
     $posts ->save();    
-    return Redirect::to('post')->with('notice', 'El usuario ha sido modificado correctamente.');
+    return Redirect::to('admin.post')->with('notice', 'El usuario ha sido modificado correctamente.');
  }
 
 }

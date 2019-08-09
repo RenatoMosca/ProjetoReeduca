@@ -13,15 +13,17 @@
     @csrf 
   <div class="form-group">
     <label for="nome_autor_comentario">Seu nome</label>
-    <input type="text" class="form-control" id="nome_autor_comentario" aria-describedby="text" placeholder="Nome">
+    <input type="text" class="form-control" name="nome_autor_comentario" id="nome_autor_comentario" aria-describedby="text" placeholder="Nome">
   </div>
   <div class="form-group">
     <label for="url_immg_comentario">Imagem</label>
-    <input type="file" class="form-control-file" id="url_immg_comentario">
+    <input type="file" class="form-control-file" id="url_immg_comentario" name="url_immg_comentario">
   </div>
   <div class="form-group">
     <label for="comentario">Digite o seu comentário</label>
-    <input type="text" class="form-control" id="comentario" aria-describedby="text" placeholder="Seu Comentário">
+    <input type="text" class="form-control" name="comentario" id="comentario" aria-describedby="text" placeholder="Seu Comentário">
+  <input type="hiden" id="status" value="pendente">
+  <input type="number" hidden name="idpost" id="" value="{{$idpost}}">  
   </div>
   
   <button type="submit" class="btn btn-primary">Enviar</button>
