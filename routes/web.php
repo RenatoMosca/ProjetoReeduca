@@ -56,6 +56,17 @@ Route::get('/admin/post', 'PostController@exibirTodos');
 Route::post('/admin/post/cadastrar', 'PostController@create');
 
 
+//controller autor
+Route::get('/admin/autor', 'AutorController@exibirTodos');
+Route::get('/admin/autor/cadastro', 'AutorController@cadastrar');
+Route::post('/admin/autor/cadastrar_autor', 'AutorController@create');
+Route::get('/admin/autor/remover_autor/{id}', 'AutorController@delete');
+
+Route::get('/admin/autor/editar_autor/{id}', 'AutorController@edit');
+Route::post('/admin/autor/editar_autor/{id}', 'AutorController@update');
+
+
+
 //-----testes
 
 Auth::routes();
