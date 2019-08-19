@@ -47,17 +47,38 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 
-//visualização dos posts no painel admin
-Route::get('/admin/post', 'PostController@exibirTodos');
+Route::get('/admin/post','PostController@exibirTodos');
+Route::get('/admin/post/cadastro', 'PostController@cadastrar');
+Route::post('/admin/post/cadastrar_post', 'PostController@create');
+Route::get('/admin/post/remover_post/{id}', 'PostController@delete');
 
-//visualização do formulário
-Route::get('/admin/post/cadastrar','PostController@cadastrar');
-//Porque não tem a visualização dessa rota? Ela é necessária?
-Route::post('/admin/post/create','PostController@create');
+Route::get('/admin/post/editar_post/{id}', 'PostController@edit');
+Route::post('/admin/post/editar_post/{id}', 'PostController@update');
 
-Route::get('/admin/post/edit/{id}','PostController@edit');
 
-//Controllers Admin: Comentários do Blog
+
+//visualização do painel admin
+
+Route::get('/blog','PostController@exibirTodosBlog');
+// Route::get('/admin/post/cadastro', 'PostController@cadastrar');
+// Route::post('/admin/post/cadastrar_post', 'PostController@create');
+// Route::get('/admin/post/remover_post/{id}', 'PostController@delete');
+
+// Route::get('/admin/post/editar_post/{id}', 'PostController@edit');
+// Route::post('/admin/post/editar_post/{id}', 'PostController@update');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //controller autor
 Route::get('/admin/autor', 'AutorController@exibirTodos');

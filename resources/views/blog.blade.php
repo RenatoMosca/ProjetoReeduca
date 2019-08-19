@@ -131,16 +131,17 @@
             <div class="posts col-lg-9 ">
 
                 <div class="row">
+                @foreach($posts as $post)
                     <!--Primeiro Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
-                        <img src="images/card_blog_1.jpg"  class="card-img-top" alt="Reciclagem">
+                        <img src="{{ asset(<?php echo $post->url_img_post ?>) }}"  class="card-img-top" alt="Reciclagem">
                         <div class="card-body">
-                            <h5 class="card-title">Reciclar pra quê</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">{{$post->titulo}}</h5>
+                            <p class="card-text">{{$post->desc_breve}}</p>
                         </div>
                     </div>
-                    <!--Segundo Card do Blog-->
+                    @endforeach
+                    <!-- Segundo Card do Blog
                     <div class="card_blog col-md-6 col-sm-6">
                         <img src="images/card_blog_2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -149,50 +150,9 @@
                                 content.</p>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
-                <div class="row">
-                    <!--Terceiro Card do Blog-->
-                    <div class="card_blog col-md-6 col-sm-6">
-                        <img src="{{ asset('images/card_blog_3.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                    </div>
-                    <!--Quarto Card do Blog-->
-                    <div class="card_blog col-md-6 col-sm-6">
-                        <img src="images/card_blog_4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Canudos biodegradáveis</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                
 
             </div>
 
