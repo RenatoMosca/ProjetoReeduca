@@ -13,50 +13,67 @@ class PostController extends Controller
         $posts = Post::all();
         return view('admin.post',['posts'=>$posts]);
     }
+//site
+    public function exibirTodosBlog(){
+        $posts = Post::all();
+        return view('blog',['posts'=>$posts]);
+    }
      
-     //passo 1
+    //método cadastrar posts
     public function cadastrar(){
           
          return view('admin.cadastrar_post');
      }
     
-      //passo 2     
+     
+    //método criar posts    
+      protected function create(request $data){
     
-    public function create(Request $request){
+        $nameImagem = $data->url_img_post->getClientOriginalName(); 
+        $nameOficial= "storage/img/".$nameImagem;
+        $upload = $data->url_img_post->storeAs('public/img', $nameImagem);
+
+        $posts = Post::create([
+            'titulo' => $data->titulo,
+            'url_img_post' => $nameOficial,
+            'nome_autor_post' => $data->nome_autor_post,
+            'desc_breve' => $data->desc_breve,
+            'artigo' => $data->artigo,
+            'id_categoria' =>1,
+        ]);
+        return redirect('admin/post')->with('notice', 'Autor incluído com sucesso!');
+        }    
    
-        $post = new Post();
-
-        $post->titulo = $request->titulo;
-        $post->url_img_post = $request->url_img_post;
-        $post->nome_autor_post = $request->nome_autor_post;
-        $post->desc_breve = $request->desc_breve;
-        $post->artigo = $request->artigo;
-        // $post->dt_inclusão = $request->dt_inclusão;
-        $post->id_categoria = 1;
-        $post->save();          
-           
-        return redirect('/admin/post');
-        }
-
 
 
     //método editar um post
-
     public function edit($id) {
-        $posts = Post::find($id);
-        return view('admin.post',['posts'=>$posts]);
+        $post = Post::find($id);
+        return view('admin.editar_post',['post'=>$post]);
          }
 
-    //método update um post
+    //método atualizar um post
+    public function update(request $request, $id) {
+        // $nameImagem = $request->image->getClientOriginalName(); 
+        // $upload = $request->image->storeAs('/public/storage', $nameImagem);
 
-    public function update($id) {
-    $posts = Post::find($id);
-    $posts ->titulo = Input::post('titulo');
-    $posts ->nome_autor_post = Input::post('nome_autor_post');
-    $posts ->desc_breve = Input::post('desc_breve');
-    $posts ->id_categoria = Input::post('id_categoria');
-    $posts ->save();    
-    return Redirect::to('admin.post')->with('notice', 'El usuario ha sido modificado correctamente.');
- }
+        $posts = Post::find($id);   
+        $posts ->titulo = $request->titulo;
+        $posts ->url_img_post = $request->url_img_post;
+        $posts ->nome_autor_post = $request->nome_autor_post;
+        $posts ->desc_breve = $request->desc_breve;
+        $posts ->artigo = $request->artigo;
+        $posts ->save();       
+
+        return redirect('/admin/post')->with('notice', 'Autor atualizado com sucesso!');
+    }
+
+    public function delete($id) {
+        $posts = Post::find($id);
+        $posts -> delete();
+        return redirect('/admin/post');
+    }
+
+   
 
 }
