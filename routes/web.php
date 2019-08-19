@@ -58,6 +58,15 @@ Route::post('/admin/post/create','PostController@create');
 Route::get('/admin/post/edit/{id}','PostController@edit');
 
 //Controllers Admin: Comentários do Blog
+//visualizar todos
+Route::get('/admin/post_comentario', 'Post_comentarioController@exibirTodosComentarios');
+//fornulario de envio
+Route::get('/admin/comentario_teste', 'Post_comentarioController@cadastroComentario');
+//enviar dados
+Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name('comentarioadm');
+//deletar
+Route::get('/admin/remove_post_comentario{id}', 'Post_comentarioController@delete' );
+
 
 //controller autor
 Route::get('/admin/autor', 'AutorController@exibirTodos');
