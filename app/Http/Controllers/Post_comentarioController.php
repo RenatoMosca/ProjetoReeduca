@@ -20,7 +20,7 @@ class Post_comentarioController extends Controller
         $post_comentario = Post_comentario::where('status', '==', 'ativo');
         return view();
     }
-    
+
     public function create(Request $request){
         $date = $request ->all();
 

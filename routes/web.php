@@ -79,7 +79,6 @@ Route::get('/blog','PostController@exibirTodosBlog');
 
 
 
-<<<<<<< HEAD
 //Controllers Admin: Comentários do Blog
 //visualizar todos
 Route::get('/admin/post_comentario', 'Post_comentarioController@exibirTodosComentarios');
@@ -90,8 +89,6 @@ Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name(
 //deletar
 Route::get('/admin/remove_post_comentario{id}', 'Post_comentarioController@delete' );
 
-=======
->>>>>>> 415c0c538701aeea31c644913263be0be9533605
 
 //controller autor
 Route::get('/admin/autor', 'AutorController@exibirTodos');
