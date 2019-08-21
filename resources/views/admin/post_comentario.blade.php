@@ -3,9 +3,8 @@
 
 @section('conteudo_admin')
 @if(isset($posts_comentarios))
-    @foreach($posts_comentarios as $posts_comentario)
-    {{$posts_comentario}}
-    @endforeach
+
+
      <div class="row">
         <div class="col-md-8">
             <h3>Comentário Post</h3>
@@ -26,12 +25,14 @@
           <tr>
             <th scope="row">{{$posts_comentario->id_post_comentario}}</th>
             <td>{{$posts_comentario->nome_autor_comentario}}</td>
-            <td>{{$posts_comentario->comentario}}</td> -->
+            <td>{{$posts_comentario->comentario}}</td>
 
             <td>Status</td>
+            <td><a href="/admin/remove_post_comentario/{{$posts_comentario->id_post_comentario}}">Remover</a></td>
           </tr>
         @endforeach
         </tbody>
-      </table> -->
+      </table>
+
 @endif
 @endsection

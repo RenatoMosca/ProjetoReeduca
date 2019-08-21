@@ -63,8 +63,14 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Posts</span>
         </a>
-        
-        
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/admin/post_comentario" 
+         >
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Posts Comentários</span>
+        </a>
       </li>
 
       <li class="nav-item">
