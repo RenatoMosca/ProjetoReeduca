@@ -11,6 +11,9 @@
 |
 */
 //rotas de visualização
+
+use App\Http\Controllers\Auth\LoginController;
+
 Route::get('/', function () {
     return view('index');
 });
@@ -38,6 +41,13 @@ Route::get('/contato', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/cadastro', function () {
+    return view('register');
+});
+Route::get('/remoney', function () {
+    return view('remoney');
+});
+Route::post('/logar', 'Auth\LoginController@logar');
 
 
 //Controllers Admin: Post do Blog
@@ -67,6 +77,15 @@ Route::get('/admin/autor/remover_autor/{id}', 'AutorController@delete');
 
 Route::get('/admin/autor/editar_autor/{id}', 'AutorController@edit');
 Route::post('/admin/autor/editar_autor/{id}', 'AutorController@update');
+
+//controller produto
+Route::get('/admin/produto', 'ProdutoController@exibirTodos');
+Route::get('/admin/produto/cadastro', 'ProdutoController@cadastrar');
+Route::post('/admin/produto/cadastrar_produto', 'ProdutoController@create');
+Route::get('/admin/produto/remover_produto/{id}', 'ProdutoController@delete');
+
+Route::get('/admin/produto/editar_produto/{id}', 'ProdutoController@edit');
+Route::post('/admin/produto/editar_produto/{id}', 'ProdutoController@update');
 
 
 

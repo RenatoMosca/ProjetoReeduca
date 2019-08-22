@@ -19,26 +19,57 @@
 }
 .home-page h2{
     font-size: 2em;
-    text-align: initial; 
+    text-align: initial;
     padding-bottom: 31px
 }
 .home-page i{
-    color: #73C72B; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    color: #73C72B;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: bold;
 }
 .home-page h5{
-    color: #73C72B; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    color: #73C72B;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 2em;
-    text-align: -webkit-auto; 
+    text-align: -webkit-auto;
     text-decoration: overline;
 }
 .home-page p{
-    font-size: larger; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
-    text-align: justify; 
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    text-align: justify;
     line-height: 40px;
+}
+.callout{
+    height: 100px;
+    background-color: #73C72B;
+    background-size: cover;
+    opacity: initial;
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+}
+
+.callout-newsletter{
+    height: 100px;
+    background-size: cover;
+    opacity: initial;
+    display: flex;
+    font-size: 10px;
+    text-align: right;
+}
+.callout-newsletter input{
+    font-size: 18px;
+    height: 30px;
+    width: 340px;
+}
+.callout-newsletter button{
+    font-size: 18px;
+    height: 40px;
+    width: 140px;
+}
+.parceiros h4{
+    text-align: center;
 }
 /* CARROSSEL */
 .imgcarrossel{
@@ -68,9 +99,9 @@
     position: relative;
 }
 .navbar-nav{
-    text-align: right;    
-    padding: 0;       
-}   
+    text-align: right;
+    padding: 0;
+}
 
 
 /* PÁGINA SOBRE */
@@ -87,30 +118,30 @@
     background-size: cover;
     opacity: initial;
     display: flex;
-   
+
 }
 .home-sobre h2{
     font-size: 2em;
-    text-align: initial; 
-   
+    text-align: initial;
+
     padding-bottom: 31px;
 }
 .home-sobre i{
-    color: #73C72B; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    color: #73C72B;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: bold;
 }
 .home-sobre h5{
-    color: #73C72B; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    color: #73C72B;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 2em;
-    text-align: -webkit-auto; 
+    text-align: -webkit-auto;
     text-decoration: overline;
 }
 .home-sobre p{
-    font-size: larger; 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
-    text-align: justify; 
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    text-align: justify;
     line-height: 40px;
 }
 .background-recicla{
@@ -145,11 +176,11 @@
     display: flex;
     justify-content: center;
     align-items: center; */
-    
+
 
 /* .texto-sobre-2{
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-size: larger; 
+    font-size: larger;
     text-align: center;
     line-height: 40px;
     text-align: justify;
@@ -176,28 +207,33 @@
 
 /* FINAL PÁGINA SOBRE  */
 
+.link-cadastro{
+    width: 100%;
+    text-align: center;
+}
 /* PÁGINA LOJA */
-.texto-titulo h1{   
+
+.texto-titulo h1{
     font-size: 2em;
-    text-align: initial;        
-    padding-bottom: 31px;    
+    text-align: initial;
+    padding-bottom: 31px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-transform: uppercase;
-    font-size: 2em;    
-    text-align: left; 
+    font-size: 2em;
+    text-align: left;
 }
 
 .texto-titulo  p{
-    color: rgb(247, 250, 244); 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+    color: rgb(247, 250, 244);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 2em;
-    text-align: -webkit-auto; 
+    text-align: -webkit-auto;
     text-decoration: overline;
 }
 
 section.fundo-login{
-    height: 482px;    
-    padding: 30px;         
+    height: 482px;
+    padding: 30px;
 }
 .jumbotron{
     background-image: url('../images/cursos1.jpg');
@@ -210,7 +246,7 @@ section.fundo-login{
 
 }
 .jumbotron.container{
-    text-align: center;     
+    text-align: center;
 }
 /* FINAL PÁGINA LOJA */
 
@@ -222,34 +258,35 @@ section.fundo-login{
 
 /* PÁGINA REMONEY */
 .descricao-remoney{
-    height: 450px; 
-    color: #707175;  
+    height: 450px;
+    color: #707175;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-align: justify;
-    line-height: 26px;         
+    line-height: 26px;
 }
 .conteudo-inteiro-remoney{
     display: flex;
 }
 .descricao-vantagem-remoney{
-    margin-bottom: 16px;  
+    margin-bottom: 16px;
     height: 74vh;
-    color: grey;   
-    padding-top: 46px; 
+    color: grey;
+    padding-top: 46px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-align: justify;
-    line-height: 33px;      
+    line-height: 33px;
 }
 .remoneyCaixa{
     margin-bottom: 70px;
 }
+
 #vantagem{
     color:#73C72B;
     text-transform: uppercase;
-    font-size: large;
+
     color: black;
     text-transform: uppercase;
-    font-size: xx-large;
+    font-size: large;
     border: solid -7px grey;
     border-radius: -8px;
     text-align: center;
@@ -270,7 +307,7 @@ section.fundo-login{
 /* PÁGINA CONTATO */
 .imagem_fundo_contato{
     background-image: url('../images/bg-contato.jpg');
-    background-size: 1400px;     
+    background-size: 1400px;
 }
 .ladoDireito{
     padding-top: 52px;
@@ -286,7 +323,7 @@ section.fundo-login{
     margin: 0 auto;
 }
 .form_contato1{
-    padding-top: 5px;  
+    padding-top: 5px;
 }
 .botao_contato{
     padding-bottom: 74px;
@@ -295,13 +332,13 @@ section.fundo-login{
 /* FINAL PÁGINA CONTATO */
 
 /* FOOTER */
-footer { 
+footer {
     background-color: #73C72B;
     bottom:0;
     width:100%;
 }
 .footer-copyright p{
-    padding-left: 47px;    
+    padding-left: 47px;
     padding-top: 25px;
     color: white;
 }
@@ -315,13 +352,12 @@ footer {
     .imgcarrossel {
         height: 242px;
     }
-    .background-recicla{     
+    .background-recicla{
         background: none;
         overflow: auto;
         display: none;
     }
-       
+
 
     }
-    
- 
+

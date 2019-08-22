@@ -10,6 +10,7 @@
 
   <section class="fundo-login">
     <div class="container">
+
       <div class="row">
         <form class="form_login formulario">
           <div class="form-group">
@@ -22,7 +23,7 @@
           </div>
 
           <div class="botao_login">
-            <button type="button" class="button">Fazer Longin</button>
+            <button type="button" class="button">Fazer Login</button>
           </div>
         </form>
       </div>

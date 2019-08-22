@@ -28,7 +28,9 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+
+        protected $redirectTo = "/";
+
 
     /**
      * Create a new controller instance.
@@ -55,12 +57,12 @@ class RegisterController extends Controller
             'cpf' => ['required', 'integer', 'Digits:11'],
             'cep' => ['required', 'numeric', 'Digits:8'],
             'logradouro' => ['required', 'string', 'max:255'],
-            'nr' => ['required', 'integer'],            
+            'nr' => ['required', 'integer'],
             'bairro' => ['required', 'string'],
             'cidade' => ['required', 'string'],
             'uf' => ['required', 'string', 'max:2'],
             // 'id_usuario_ava' => ['required', 'integer'],
-            
+
         ]);
     }
 
@@ -74,7 +76,7 @@ class RegisterController extends Controller
     {
 
 
-        return User::create([
+      return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -86,7 +88,9 @@ class RegisterController extends Controller
             'cidade' => $data['cidade'],
             'complemento'=> $data['complemento'],
             'uf' => $data['uf'],
+            'nivel_usuario' => 1,
             // 'id_usuario_ava'=> $data['id_usuario_ava'],
         ]);
+
     }
 }

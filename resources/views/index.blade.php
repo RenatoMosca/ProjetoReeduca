@@ -11,8 +11,11 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner imgcarrossel">
     <div class="carousel-item active">
-      <img src="{{ asset('images/plastico_praia.jpg')}}" class="d-block w-100" alt="...">
+      <img src="{{ asset('images/garrafa.jpg')}}" class="d-block w-100 img-responsive" alt="...">
     </div>
+    <div class="carousel-item">
+        <img src="{{ asset('images/plastico_praia.jpg')}}" class="d-block w-100" alt="...">
+      </div>
     <div class="carousel-item">
       <img src="{{ asset('images/lacre_lata.jpg')}}" class="d-block w-100" alt="...">
     </div>
@@ -26,11 +29,15 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
-
+</section>
 
 <!-- CONTEÚDO DA PÁGINA HOME -->
+<div class="callout">
+    <div class="container">
+        <h2 class="display-6">Conheça nosso catálogo de Cursos</h2>
+        <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
+    </div>
+</div>
 <section>
     <div class="home-page">
         <div class="conteudo-texto col-lg-4">
@@ -41,14 +48,37 @@
             <p>
             Se você acredita em um mundo saudável, pacífico, digno e justo para todos, então estamos ao seu lado para alcançá-lo, seja agindo nas ruas, na internet, em pequenas comunidades, nas grandes salas do poder ou nos locais mais remotos do planeta. Se tem ideias para chegarmos lá mais rápido, queremos aprender com você. Vamo sonhar, planejar e agir juntos.</p>
         </div>
-        <div class="comece col-lg-4">
-            <button type="button" class="btn btn-success comece" onclick="javascript: location.href='remoney.php';">Comece hoje</button>
-        </div>
         <div class="conheca col-lg-4">
-            <a href="remoney.php"><img class="img-money" src="{{ asset('images/dinheirinho.png')}}" alt="conheca-nosso-programa"></a>
+            <a href="/remoney"><img class="img-money" src="{{ asset('images/dinheirinho.png')}}" alt="conheca-nosso-programa"></a>
         </div>
     </div>
 </section>
+<hr>
+<section class="parceiros">
+<h4>Parceiros</h4>
+<table class="table table-borderless">
+  <tbody>
+    <tr>
+      <td><img src="{{ asset('images/1.jpg')}}" alt=""></td>
+      <td><img src="{{ asset('images/2.jpg')}}" alt=""></td>
+      <td><img src="{{ asset('images/3.jpg')}}" alt=""></td>
+      <td><img src="{{ asset('images/4.jpg')}}" alt=""></td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<hr>
+<!-- Button trigger modal -->
+<div class="callout-newsletter">
+        <div class="container">
+            <h6 class="display-6">Assine nossa newsletter e ganhe um e-book!</h6>
+            <input type="email" name="email-newsletter" placeholder="Digite seu e-mail">
+            <button type="button" class="btn btn-success">
+                Clique aqui
+            </button>
+        </div>
+</div>
+
 
 
 @include('footer')

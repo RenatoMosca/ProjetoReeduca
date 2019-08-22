@@ -11,7 +11,10 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    <div class="row">
+                        <h6 class="link-cadastro"><a href="/register">Não tem cadastro? Cadastre-se. Clique aqui!</a></h6><br><br><br>
+                    </div>
+                    <form method="POST" action="/logar">
                         @csrf
 
                         <div class="form-group row">
