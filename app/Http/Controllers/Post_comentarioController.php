@@ -11,10 +11,16 @@ class Post_comentarioController extends Controller
     public function cadastroComentario($id){
         return view('admin.comentario_teste', ['idpost' => $id]);
     }
-    public function exibirTodos(){
+    public function exibirTodosComentarios(){
         $posts_comentarios = Post_comentario::all();
         return view('admin.post_comentario',['posts_comentarios'=>$posts_comentarios]);
     }
+
+    public function statusComentario(){
+        $post_comentario = Post_comentario::where('status', '==', 'ativo');
+        return view();
+    }
+
     public function create(Request $request){
         $date = $request ->all();
 
@@ -39,8 +45,15 @@ class Post_comentarioController extends Controller
             $upload = $request->url_img_comentario->storeAs('fotosComentarios', $nameImagem);
 
         }
+
        // $post_comentario->update($date);
             return redirect('/admin/post_comentario');
+    }
+
+    public function delete($id) {
+        $posts_comentarios = Post_comentario::find($id);
+        $posts_comentarios -> delete();
+        return redirect('/admin/post_comentario');
     }
     // public function aprovacao(Request $request){
 
