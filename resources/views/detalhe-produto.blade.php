@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Cursos - Reeduca</title>
-	
+
 @include ('head')
 <body>
- 
 @include ('header')
 
 			<!-- -->
@@ -51,9 +50,9 @@
                 <div class="card-body">
 
                   <?php if ($_GET['id'] == 1): ?>
-                    <img src="images/curso-1.jpg" alt="curso-residuos"><br>
+                    <img src="{{ asset ('images/curso-1-min.jpg')}}" alt="curso-residuos"><br>
                   <?php else: ?>
-                    <img src="images/curso-2.jpg" alt="curso-residuos"><br>
+                    <img src="{{ asset ('images/curso-2-min.jpg')}}" alt="curso-residuos"><br>
                   <?php endif; ?>
 
                   <a href="#" class="btn btn-primary">Comprar</a>

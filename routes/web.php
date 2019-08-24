@@ -29,9 +29,6 @@ Route::get('/sobre', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
-Route::get('/loja', function () {
-    return view('loja');
-});
 Route::get('/EAD', function () {
     return view('login');
 });
@@ -47,6 +44,9 @@ Route::get('/cadastro', function () {
 Route::get('/remoney', function () {
     return view('remoney');
 });
+Route::get('/loja', 'LojaController@exibirTodos');
+Route::get('/detalhe-produto/{id}', 'DetalheProdutoController@exibirProduto');
+
 Route::post('/logar', 'Auth\LoginController@logar');
 
 
