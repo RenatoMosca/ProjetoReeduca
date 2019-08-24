@@ -17,6 +17,7 @@
 @foreach($produtos as $produto)
 <div class="row">
     {{-- <div class="card"> --}}
+        {{-- testes --}}
         <div class="col-sm-2">
         </div>
         <div class="col-sm-4">
