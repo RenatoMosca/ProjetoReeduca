@@ -14,14 +14,12 @@
   </div>
 </div>
 
+@foreach($produtos as $produto)
 <div class="row">
-  <div class="col-sm-2">
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <div class="card-img img-responsive">
+    {{-- <div class="card"> --}}
+        <div class="col-sm-2">
         </div>
+<<<<<<< HEAD
         <h5 style="font-family: 'Domine', serif;" class="card-title"><i class="fas fa-recycle"></i>   Gestão de resíduos plásticos pós-consumo</h5>
         <p class="card-text">Um olhar para o fututo do processo no Brasil. Melhores soluções e aplicações.</p>
         <a href="/detalhe-curso" class="btn btn-primary">Veja os detalhes</a>
@@ -40,7 +38,27 @@
     </div>
   </div>
   <div class="col-sm-2"></div>
+=======
+        <div class="col-sm-4">
+            <div class="card-body">
+                <h5 style="font-family: 'Domine', serif;" class="card-title"><i class="fas fa-recycle"></i>   {{$produto->nome_produto}}</h5>
+                <p class="card-text">{{$produto->desc_produto}}</p>
+                <a href="/detalhe-produto/{id}" class="btn btn-primary">Veja os detalhes</a>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card-img img-responsive">
+                {{-- <img src="{{ asset() }}" alt=""> --}}
+                <img src="{{ asset(<?php echo $produto->produto ?>) }}" alt="">
+            </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    {{-- </div> --}}
+>>>>>>> a45afb2546fca7e0e22300a43f307dbce9a1e085
 </div>
+<hr>
+@endforeach
 
 <br>
 
