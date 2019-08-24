@@ -11,6 +11,7 @@ class PostController extends Controller
 
     public function exibirTodos(){
         $posts = Post::all();
+       
         return view('admin.post',['posts'=>$posts]);
     }
 //site
@@ -27,15 +28,31 @@ class PostController extends Controller
     
      
     //método criar posts    
-      protected function create(request $data){
+      protected function create(Request $data){
     
-        $nameImagem = $data->url_img_post->getClientOriginalName(); 
-        $nameOficial= "storage/img/".$nameImagem;
-        $upload = $data->url_img_post->storeAs('public/img', $nameImagem);
+        $arquivo = $data->file('img_post');
+
+        if (empty($arquivo)) {
+          abort(400, 'Nenhum arquivo foi enviado');
+        }
+  
+        // salvando
+        $nomePasta = 'uploads';
+  
+        $arquivo->storePublicly($nomePasta);
+  
+        $caminhoAbsoluto = public_path()."/storage/$nomePasta";
+  
+        $nomeArquivo = $arquivo->getClientOriginalName();
+  
+        $caminhoRelativo = "storage/$nomePasta/$nomeArquivo";
+  
+       // movendo
+        $arquivo->move($caminhoAbsoluto, $nomeArquivo);
 
         $posts = Post::create([
             'titulo' => $data->titulo,
-            'url_img_post' => $nameOficial,
+            'url_img_post' => $caminhoRelativo,
             'nome_autor_post' => $data->nome_autor_post,
             'desc_breve' => $data->desc_breve,
             'artigo' => $data->artigo,

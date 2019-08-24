@@ -67,8 +67,8 @@ Route::post('/admin/post/editar_post/{id}', 'PostController@update');
 
 
 
-//visualização do painel admin
 
+Route::get('/blog','PostController@exibirTodosBlog');
 Route::get('/blog','PostController@exibirTodosBlog');
 // Route::get('/admin/post/cadastro', 'PostController@cadastrar');
 // Route::post('/admin/post/cadastrar_post', 'PostController@create');

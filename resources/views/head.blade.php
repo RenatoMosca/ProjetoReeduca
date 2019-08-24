@@ -9,4 +9,5 @@
     <link href="https://fonts.googleapis.com/css?family=Domine:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/css_admin/cadastrar_post.css') }}" rel="stylesheet" type="text/css">
 </head>

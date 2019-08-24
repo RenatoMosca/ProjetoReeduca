@@ -50,9 +50,15 @@
                 <div class="card-body">
 
                   <?php if ($_GET['id'] == 1): ?>
+<<<<<<< HEAD:resources/views/detalhe-curso.blade.php
+				  <img src="{{ asset($produtos->url_img_prod)}}" alt="curso-residuos"><br>
+                  <?php else: ?>
+				  <img src="{{ asset($produtos->url_img_prod)}}" alt="curso-residuos"><br>
+=======
                     <img src="{{ asset ('images/curso-1-min.jpg')}}" alt="curso-residuos"><br>
                   <?php else: ?>
                     <img src="{{ asset ('images/curso-2-min.jpg')}}" alt="curso-residuos"><br>
+>>>>>>> a45afb2546fca7e0e22300a43f307dbce9a1e085:resources/views/detalhe-produto.blade.php
                   <?php endif; ?>
 
                   <a href="#" class="btn btn-primary">Comprar</a>

@@ -134,7 +134,7 @@
                 @foreach($posts as $post)
                     <!--Primeiro Card do Blog-->
                     <div class="card_blog col-md-6 col-sm-6">
-                        <img src="{{ asset(<?php echo $post->url_img_post ?>) }}"  class="card-img-top" alt="Reciclagem">
+                        <img src="{{ asset($post->url_img_post)}}"  class="card-img-top" alt="Reciclagem">
                         <div class="card-body">
                             <h5 class="card-title">{{$post->titulo}}</h5>
                             <p class="card-text">{{$post->desc_breve}}</p>

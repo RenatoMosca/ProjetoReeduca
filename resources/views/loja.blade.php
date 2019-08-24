@@ -20,6 +20,26 @@
         {{-- testes --}}
         <div class="col-sm-2">
         </div>
+<<<<<<< HEAD
+        <h5 style="font-family: 'Domine', serif;" class="card-title"><i class="fas fa-recycle"></i>   Gestão de resíduos plásticos pós-consumo</h5>
+        <p class="card-text">Um olhar para o fututo do processo no Brasil. Melhores soluções e aplicações.</p>
+        <a href="/detalhe-curso" class="btn btn-primary">Veja os detalhes</a>
+        <img src="{{ asset($post->url_img_prod)}}" alt="curso">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 style="font-family: 'Domine', serif;" class="card-title"><i class="fas fa-recycle"></i>  Tratamento de resíduos sólidos no dia a dia</h5>
+        <p class="card-text">Adquira conhecimentos sobre tipos de reciclagem e a importância de reciclar.</p>
+        <a href="/detalhe-curso" class="btn btn-primary">Veja os detalhes</a>
+        <img src="{{ asset($post->url_img_prod)}}" alt="curso">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2"></div>
+=======
         <div class="col-sm-4">
             <div class="card-body">
                 <h5 style="font-family: 'Domine', serif;" class="card-title"><i class="fas fa-recycle"></i>   {{$produto->nome_produto}}</h5>
@@ -36,6 +56,7 @@
         <div class="col-sm-2">
         </div>
     {{-- </div> --}}
+>>>>>>> a45afb2546fca7e0e22300a43f307dbce9a1e085
 </div>
 <hr>
 @endforeach
