@@ -14,18 +14,45 @@ class ProdutoController extends Controller
         return view('admin.produto',['produtos'=>$produtos]);
     }
 
+    public function exibirTodosLoja(){
+        $posts = Post::all();
+        return view('loja',['produtos'=>$produtos]);
+    }
+
+
     public function cadastrar(){
 
         return view('admin.cadastrar_produto');
     }
 
      //método criar um produto
-    protected function create(request $data){
+    protected function create(Request $data){
+        
+        $arquivo = $data->file('img_produto');
+
+        if (empty($arquivo)) {
+          abort(400, 'Nenhum arquivo foi enviado');
+        }
+  
+        // salvando
+        $nomePasta = 'uploads';
+  
+        $arquivo->storePublicly($nomePasta);
+  
+        $caminhoAbsoluto = public_path()."/storage/$nomePasta";
+  
+        $nomeArquivo = $arquivo->getClientOriginalName();
+  
+        $caminhoRelativo = "storage/$nomePasta/$nomeArquivo";
+  
+       // movendo
+        $arquivo->move($caminhoAbsoluto, $nomeArquivo);  
+
         $produtos = Produto::create([
             'nome_produto' => $data->nome_produto,
             'desc_produto' => $data->desc_produto,
             'pre_requisitos'=> $data->pre_requisitos,
-            'url_img_prod'=> $data->url_img_prod,
+            'url_img_prod'=> $caminhoRelativo,
             'carga_horaria'=> $data->carga_horaria,
             'valor'=> $data->valor,
             'publico_alvo'=> $data->publico_alvo,

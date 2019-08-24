@@ -51,9 +51,9 @@
                 <div class="card-body">
 
                   <?php if ($_GET['id'] == 1): ?>
-                    <img src="images/curso-1.jpg" alt="curso-residuos"><br>
+				  <img src="{{ asset($produtos->url_img_prod)}}" alt="curso-residuos"><br>
                   <?php else: ?>
-                    <img src="images/curso-2.jpg" alt="curso-residuos"><br>
+				  <img src="{{ asset($produtos->url_img_prod)}}" alt="curso-residuos"><br>
                   <?php endif; ?>
 
                   <a href="#" class="btn btn-primary">Comprar</a>
