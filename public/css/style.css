@@ -254,6 +254,20 @@ section.fundo-login{
 .detalhe-produto{
     margin-top: 25px;
 }
+.detalhe-compra li{
+    margin-left: 60px;
+}
+.tipo-pagamento{
+    background-color: #F3EFEF;
+    height: 60px;
+}
+.form-compra-check-label{
+    align-items: center;
+    margin-top: 15px;
+}
+.form-detalhe{
+    margin-top: 30px;
+}
 /* FINAL DETALHE-CURSO */
 
 /* PÁGINA REMONEY */

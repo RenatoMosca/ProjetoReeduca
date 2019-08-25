@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produto extends Model
 {
-    protected $fillable = ['nome_produto',
+    protected $fillable = ['id_produto',
+    'nome_produto',
     'desc_produto',
     'pre_requisitos',
     'url_img_prod',

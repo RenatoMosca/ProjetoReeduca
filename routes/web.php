@@ -46,6 +46,7 @@ Route::get('/remoney', function () {
 });
 Route::get('/loja', 'LojaController@exibirTodos');
 Route::get('/detalhe-produto/{id}', 'DetalheProdutoController@exibirProduto');
+Route::get('/detalhe-compra/{id}', 'DetalheCompraController@exibirProduto');
 
 Route::post('/logar', 'Auth\LoginController@logar');
 
@@ -76,17 +77,6 @@ Route::get('/blog','PostController@exibirTodosBlog');
 
 // Route::get('/admin/post/editar_post/{id}', 'PostController@edit');
 // Route::post('/admin/post/editar_post/{id}', 'PostController@update');
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Controllers Admin: Comentários do Blog
