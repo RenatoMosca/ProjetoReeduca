@@ -48,6 +48,8 @@ Route::get('/loja', 'LojaController@exibirTodos');
 Route::get('/detalhe-produto/{id}', 'DetalheProdutoController@exibirProduto');
 Route::get('/detalhe-compra/{id}', 'DetalheCompraController@exibirProduto');
 
+Route::get('/pedido/{id}', 'PedidoController@create');
+
 Route::post('/logar', 'Auth\LoginController@logar');
 
 

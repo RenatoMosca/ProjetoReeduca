@@ -257,10 +257,6 @@ section.fundo-login{
 .detalhe-compra li{
     margin-left: 60px;
 }
-.tipo-pagamento{
-    background-color: #F3EFEF;
-    height: 60px;
-}
 .form-compra-check-label{
     align-items: center;
     margin-top: 15px;
@@ -268,6 +264,27 @@ section.fundo-login{
 .form-detalhe{
     margin-top: 30px;
 }
+.tab-compra{
+    margin-top: 30px;
+}
+.tab-pane h5,h6,img,button{
+    margin-top: 15px;
+    margin-left: 60px;
+}
+.tab-margem{
+    margin-top: 220px;
+}
+.msg-conclusao{
+    margin-top: 30px;
+    margin-left: 350px;
+    height: 430px;
+    text-align: center;
+}
+.msg-conclusao h5{
+    margin-left: 150px;
+    color: blue;
+}
+
 /* FINAL DETALHE-CURSO */
 
 /* PÁGINA REMONEY */
