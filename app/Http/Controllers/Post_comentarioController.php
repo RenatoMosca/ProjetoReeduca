@@ -68,8 +68,9 @@ class Post_comentarioController extends Controller
 
         $posts_comentarios->save();
 
-        return redirect('post',['posts'=> $id_post]);
+        return redirect('/blog',['posts'=> $id_post]);
     }
+
     // public function aprovacao(Request $request){
 
     //     $post_comentario =
