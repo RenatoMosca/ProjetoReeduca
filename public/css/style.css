@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    margin: 0;
   }
 
 
@@ -60,7 +61,6 @@
 
 }
 
-
 .container{
     display: flex;
     padding: 31px;
@@ -79,8 +79,6 @@
 .btn-success :hover { 
     background: green;    
 }
-
-
 
 .carousel{
     position: relative;
@@ -353,10 +351,7 @@ section.fundo-login{
 .tab-compra{
     margin-top: 30px;
 }
-.tab-pane h5,h6,img,button{
-    margin-top: 15px;
-    margin-left: 60px;
-}
+
 .tab-margem{
     margin-top: 220px;
 }
