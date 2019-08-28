@@ -59,7 +59,7 @@ class Post_comentarioController extends Controller
     public function status($id){
         $posts_comentarios = Post_comentario::find($id);
         $post_comentario -> status();
-        return redirect('post',['posts'=> $id_post]);
+        return redirect('post',['posts'=> $id]);
     }
 
     public function update($id){
@@ -68,7 +68,7 @@ class Post_comentarioController extends Controller
 
         $posts_comentarios->save();
 
-        return redirect('/blog',['posts'=> $id_post]);
+        return redirect('/admin/post_comentario');
     }
 
     // public function aprovacao(Request $request){
