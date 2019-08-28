@@ -11,7 +11,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner imgcarrossel">
     <div class="carousel-item active">
-      <img src="{{ asset('images/garrafa.jpg')}}" class="d-block w-100 img-responsive" alt="...">
+      <img src="{{ asset('images/preserve.jpg')}}" class="d-block w-100 img-responsive" alt="...">
     </div>
     <div class="carousel-item">
         <img src="{{ asset('images/plastico_praia.jpg')}}" class="d-block w-100" alt="...">
@@ -29,14 +29,29 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="container-texto" style="position: absolute;top: 100px">
+      <div class="texto-fixo">
+        <h1>Reciclar, educar...</h1>        
+        
+      </div>
+      <div class="texto-fixo-2">
+        <h1>Você pode!</h1>        
+        
+      </div>
 </section>
 
 <!-- CONTEÚDO DA PÁGINA HOME -->
 <div class="callout">
+ 
     <div class="container">
-        <h2 class="display-6">Conheça nosso catálogo de Cursos</h2>
-        <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
-    </div>
+  <div>
+        <h2 class="display-6">Conheça nosso catálogo de Cursos</h2>   
+  </div> 
+  <div>      
+    <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
+  </div> 
+    
+  </div>
 </div>
 <section>
     <div class="home-page">
@@ -71,7 +86,7 @@
 <!-- Button trigger modal -->
 <div class="callout-newsletter">
         <div class="container">
-            <h6 class="display-6">Assine nossa newsletter e ganhe um e-book!</h6>
+            <p class="chamadaNewsletter">Assine nossa newsletter e ganhe um e-book!</p>
             <input type="email" name="email-newsletter" placeholder="Digite seu e-mail">
             <button type="button" class="btn btn-success">
                 Clique aqui

@@ -24,6 +24,7 @@ class Post extends Migration
             $table->bigInteger('id_categoria')->unsigned();
             $table->timestamps();
             $table->foreign('id_categoria')->references('id_categoria')->on('categoria');
+            
 
         });
     }

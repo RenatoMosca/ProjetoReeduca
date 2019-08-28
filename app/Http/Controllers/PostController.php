@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Post;
+use App\Categoria;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -10,14 +11,14 @@ class PostController extends Controller
     //método exibir todos os posts
 
     public function exibirTodos(){
-        $posts = Post::all();
-       
+        $posts = Post::all();        
         return view('admin.post',['posts'=>$posts]);
     }
 //site
     public function exibirTodosBlog(){
         $posts = Post::all();
-        return view('blog',['posts'=>$posts]);
+        $categorias = Categoria::all();
+        return view('blog',['posts'=>$posts], ['categorias'=>$categorias]);
     }
      
     //método cadastrar posts
@@ -60,6 +61,8 @@ class PostController extends Controller
         ]);
         return redirect('admin/post')->with('notice', 'Autor incluído com sucesso!');
         }    
+
+      
    
 
 
