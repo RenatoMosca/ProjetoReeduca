@@ -83,17 +83,32 @@
 .carousel{
     position: relative;
 }
+
+.carousel-item-next, .carousel-item-prev, .carousel-item{
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+.container-texto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 .texto-fixo {  
     position: absolute;
     padding: 5px;   
     text-align: center;  
     width: 427px;
+    max-width: 100%;
     background-color:grey;
     border-radius: 6px;
     margin-left: 29px;
     color: white;
     text-transform: uppercase;
-   
+    top: 70px;
+    left: 50px;
     opacity: 0.9;
     filter: alpha(opacity=50);
 }
@@ -101,15 +116,16 @@
 .texto-fixo-2 {  
     position: absolute;
     padding: 5px; 
-    margin-left: 10p;
-    margin-right: 50px;  
+    /* margin-left: 10p;
+    margin-right: 50px;   */
     text-align: center;
     width: 427px;
+    max-width: 100%;
     background-color:grey;
     border-radius: 6px;
-    left: 891px;
     box-shadow: aquamarine;
-    top: 137px;
+    right: 80px;
+    bottom: 50px;
     color: white;
     text-transform: uppercase;
     opacity: 0.9;
@@ -351,7 +367,7 @@ section.fundo-login{
 .tab-compra{
     margin-top: 30px;
 }
-
+s
 .tab-margem{
     margin-top: 220px;
 }
@@ -460,10 +476,15 @@ footer {
       background: none;
       overflow: auto;
     }
-
-    .imgcarrossel {
-        height: 242px;
+    .texto-fixo-2{
+        right: 30px;
     }
+    .texto-fixo{
+        left: -10px;
+    }
+    /* .imgcarrossel {
+        height: 242px;
+    } */
     .background-recicla{
         background: none;
         overflow: auto;
