@@ -55,6 +55,22 @@ class Post_comentarioController extends Controller
         $posts_comentarios -> delete();
         return redirect('/admin/post_comentario');
     }
+
+    public function status($id){
+        $posts_comentarios = Post_comentario::find($id);
+        $post_comentario -> status();
+        return redirect('post',['posts'=> $id_post]);
+    }
+
+    public function update($id){
+        $posts_comentarios = Post_comentario::find($id);
+        $posts_comentarios ->status='ativo';
+
+        $posts_comentarios->save();
+
+        return redirect('/blog',['posts'=> $id_post]);
+    }
+
     // public function aprovacao(Request $request){
 
     //     $post_comentario =

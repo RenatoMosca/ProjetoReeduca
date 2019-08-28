@@ -46,6 +46,9 @@ Route::get('/remoney', function () {
 });
 Route::get('/loja', 'LojaController@exibirTodos');
 Route::get('/detalhe-produto/{id}', 'DetalheProdutoController@exibirProduto');
+Route::get('/detalhe-compra/{id}', 'DetalheCompraController@exibirProduto');
+
+Route::get('/pedido/{id}', 'PedidoController@create');
 
 Route::post('/logar', 'Auth\LoginController@logar');
 
@@ -98,7 +101,9 @@ Route::get('/admin/comentario_teste', 'Post_comentarioController@cadastroComenta
 //enviar dados
 Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name('comentarioadm');
 //deletar
-Route::get('/admin/remove_post_comentario{id}', 'Post_comentarioController@delete' );
+Route::get('/admin/remove_post_comentario/{id}', 'Post_comentarioController@delete' );
+//status update
+Route::get('/admin/update_post_comentario/{id}', 'Post_comentarioController@update');
 
 
 //controller autor

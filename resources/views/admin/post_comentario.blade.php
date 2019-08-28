@@ -27,7 +27,7 @@
             <td>{{$posts_comentario->nome_autor_comentario}}</td>
             <td>{{$posts_comentario->comentario}}</td>
 
-            <td>Status</td>
+            <td><a href="/admin/update_post_comentario/{{$posts_comentario->id_post_comentario}}">Status</a></td>
             <td><a href="/admin/remove_post_comentario/{{$posts_comentario->id_post_comentario}}">Remover</a></td>
           </tr>
         @endforeach

@@ -15,7 +15,7 @@ class ProdutoController extends Controller
     }
 
     public function exibirTodosLoja(){
-        $posts = Post::all();
+        $posts = Produto::all();
         return view('loja',['produtos'=>$produtos]);
     }
 
@@ -27,26 +27,26 @@ class ProdutoController extends Controller
 
      //método criar um produto
     protected function create(Request $data){
-        
+
         $arquivo = $data->file('img_produto');
 
         if (empty($arquivo)) {
           abort(400, 'Nenhum arquivo foi enviado');
         }
-  
+
         // salvando
         $nomePasta = 'uploads';
-  
+
         $arquivo->storePublicly($nomePasta);
-  
+
         $caminhoAbsoluto = public_path()."/storage/$nomePasta";
-  
+
         $nomeArquivo = $arquivo->getClientOriginalName();
-  
+
         $caminhoRelativo = "storage/$nomePasta/$nomeArquivo";
-  
+
        // movendo
-        $arquivo->move($caminhoAbsoluto, $nomeArquivo);  
+        $arquivo->move($caminhoAbsoluto, $nomeArquivo);
 
         $produtos = Produto::create([
             'nome_produto' => $data->nome_produto,
