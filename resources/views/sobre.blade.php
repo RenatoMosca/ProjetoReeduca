@@ -13,6 +13,18 @@
 </section>
 
 <section>
+<div class="callout">
+ 
+    <div class="container">
+  <div>
+        <h2 class="display-6">Aprenda com a Reeduca! </h2>   
+  </div> 
+  <div>      
+    <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
+  </div> 
+    
+  </div>
+</div>
     <div class="home-sobre">
         <div class="conteudo-texto col-lg-4">
             <h2>Melhor aprendizado é igual <i>qualidade de vida</i><br></h2>

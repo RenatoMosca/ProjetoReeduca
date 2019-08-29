@@ -37,6 +37,28 @@
     <textarea class="form-control" id="artigo" name="artigo" rows=""></textarea>
   </div>
 
+  <ul>
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" name="categoria"class="dropdown-toggle">Categorias<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Two
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Two
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+ 
 
  
 <button type="submit" id="botao_cadastrar" class="btn btn-primary" name="bt1">Cadastrar </button>

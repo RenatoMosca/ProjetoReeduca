@@ -10,15 +10,10 @@
 <section class="carousel">
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner imgcarrossel">
-    <div class="carousel-item active">
-      <img src="{{ asset('images/garrafa.jpg')}}" class="d-block w-100 img-responsive" alt="...">
+    <div class="carousel-item active" style="background-image: url({{ asset('images/preserve.jpg')}})">
     </div>
-    <div class="carousel-item">
-        <img src="{{ asset('images/plastico_praia.jpg')}}" class="d-block w-100" alt="...">
-      </div>
-    <div class="carousel-item">
-      <img src="{{ asset('images/lacre_lata.jpg')}}" class="d-block w-100" alt="...">
-    </div>
+    <div class="carousel-item" style="background-image: url({{ asset('images/plastico_praia.jpg')}})"></div>
+    <div class="carousel-item" style="background-image: url({{ asset('images/lacre_lata.jpg')}})"></div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -28,15 +23,30 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <div class="container-texto">
+    <div class="texto-fixo">
+      <h1>Reciclar, educar...</h1>        
+      
+    </div>
+    <div class="texto-fixo-2">
+      <h1>Você pode!</h1>        
+      
+    </div>
 </div>
 </section>
 
 <!-- CONTEÚDO DA PÁGINA HOME -->
 <div class="callout">
+ 
     <div class="container">
-        <h2 class="display-6">Conheça nosso catálogo de Cursos</h2>
-        <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
-    </div>
+  <div>
+        <h2 class="display-6">Conheça nosso catálogo de Cursos</h2>   
+  </div> 
+  <div>      
+    <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
+  </div> 
+    
+  </div>
 </div>
 <section>
     <div class="home-page">
@@ -71,7 +81,7 @@
 <!-- Button trigger modal -->
 <div class="callout-newsletter">
         <div class="container">
-            <h6 class="display-6">Assine nossa newsletter e ganhe um e-book!</h6>
+            <p class="chamadaNewsletter">Assine nossa newsletter e ganhe um e-book!</p>
             <input type="email" name="email-newsletter" placeholder="Digite seu e-mail">
             <button type="button" class="btn btn-success">
                 Clique aqui

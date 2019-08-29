@@ -78,12 +78,24 @@ Route::post('/admin/post/editar_post/{id}', 'PostController@update');
 
 Route::get('/blog','PostController@exibirTodosBlog');
 Route::get('/blog','PostController@exibirTodosBlog');
+Route::get('/detalhe-post/{id}', 'DetalhePostController@exibirPost');
 // Route::get('/admin/post/cadastro', 'PostController@cadastrar');
 // Route::post('/admin/post/cadastrar_post', 'PostController@create');
 // Route::get('/admin/post/remover_post/{id}', 'PostController@delete');
 
 // Route::get('/admin/post/editar_post/{id}', 'PostController@edit');
 // Route::post('/admin/post/editar_post/{id}', 'PostController@update');
+
+Route::get('/admin/categoria','CategoriaController@cadastrarCategoria');
+Route::post('/admin/post', 'CategoriaController@create');
+
+
+
+
+
+
+
+
 
 
 //Controllers Admin: Comentários do Blog
@@ -94,7 +106,9 @@ Route::get('/admin/comentario_teste', 'Post_comentarioController@cadastroComenta
 //enviar dados
 Route::post('/admin/post_comentario', 'Post_comentarioController@create')->name('comentarioadm');
 //deletar
-Route::get('/admin/remove_post_comentario{id}', 'Post_comentarioController@delete' );
+Route::get('/admin/remove_post_comentario/{id}', 'Post_comentarioController@delete' );
+//status update
+Route::get('/admin/update_post_comentario/{id}', 'Post_comentarioController@update');
 
 
 //controller autor

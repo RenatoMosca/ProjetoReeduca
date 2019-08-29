@@ -33,6 +33,9 @@
         @endforeach
         </tbody>
       </table>
+      <!-- @if(isset($notice))
+        <h1>{{$notice}}</h1>
+      @endif -->
 @endif
 @endsection
 

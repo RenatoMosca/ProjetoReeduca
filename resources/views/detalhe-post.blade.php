@@ -8,7 +8,7 @@
     <!-- WEB FONTS : use %7C instead of | (pipe) -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
     <!-- THEME CSS -->
-    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/essentials.css" rel="stylesheet" type="text/css" />
     <!-- ------------------------------------------------- -->
     <!-- Bloco importado do template -->
     <!-- ------------------------------------------------- -->
@@ -126,19 +126,18 @@
 
             <div class="posts col-lg-9 ">
 
-                <div class="row">
-                @foreach($posts as $post)
+                <div class="row">              
                     <!--Primeiro Card do Blog-->
-                    <div class="card_blog col-md-6 col-sm-6">
-					<a href="/detalhe-post/{{$post->id_post}}"><img src="{{ asset($post->url_img_post)}}"  class="card-img-top" alt="Reciclagem"></a>
+                    <div class="card_blog col-md-12 col-sm-12">
+                        <img src="{{ asset($post->url_img_post)}}"  class="card-img-top" alt="Reciclagem">
                         <div class="card-body">
                             <h5 class="card-title">{{$post->titulo}}</h5>
-                            <p class="card-text">{{$post->desc_breve}}</p>
+                            <p class="card-text">{{$post->artigo}}</p>
                         </div>
                     </div>
-                    @endforeach
-                    <!-- Segundo Card do Blog
-                    <div class="card_blog col-md-6 col-sm-6">
+                  
+                    <!-- Segundo Card do Blog -->
+                    <!-- <div class="card_blog col-md-6 col-sm-6">
                         <img src="images/card_blog_2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Canudos biodegradáveis</h5>

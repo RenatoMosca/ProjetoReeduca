@@ -88,7 +88,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="true"
+        <a class="nav-link collapsed" href="/admin/cadastrar_categoria" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="true"
           aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Categorias</span>
