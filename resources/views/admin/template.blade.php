@@ -58,7 +58,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/admin/post" 
+        <a class="nav-link collapsed" href="/admin/post"
          >
           <i class="fas fa-fw fa-cog"></i>
           <span>Posts</span>
@@ -66,7 +66,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/admin/post_comentario" 
+        <a class="nav-link collapsed" href="/admin/post_comentario"
          >
           <i class="fas fa-fw fa-cog"></i>
           <span>Posts Comentários</span>

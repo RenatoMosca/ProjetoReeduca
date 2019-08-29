@@ -5,13 +5,14 @@ use App\Pedido;
 // use App\Itens_Pedido;
 use Illuminate\Http\Request;
 
+
 class PedidoController extends Controller
 {
 
     protected function create(request $data){
         $pedido = Pedido::create([
             'status' => 'aguardando pagamento',
-            'id' => $data->id,
+            'id' => Auth::user()->id,
             'forma_pagto' => 'cartao',
             'nr_parcelas' => 0,
         ]);

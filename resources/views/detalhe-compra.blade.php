@@ -57,6 +57,7 @@
                                         </div>
                                     </div>
                                     <br>
+                                <input type="hidden" name="comprador" value="{{Auth::user()->id}}">
                                     <div class="row">
                                         <div class="col">
                                            <a href="/pedido/{{$produto->id_produto}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
@@ -68,7 +69,7 @@
 
 
 
-                                <div class="col-md-4">
+                                <div class="img-pagseg col-md-4">
                                     <h5>Detalhes da compra</h5>
                                     <h6>{{$produto->nome_produto}}</h6>
                                     <h6>{{$produto->valor}},00</h6>
@@ -87,12 +88,12 @@
                             <h5>As compras efetuadas com boleto levam até 3 dias úteis para serem compensadas.</h5>
                         </div>
                         <div class="col">
-                            <a href="/pedido/{{$produto->id_produto}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
+                        <a href="/pedido/{{$produto->id_produto}}/{{Auth::user()->id}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
                         </div>
                         <div class="col tab-margem">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="img-pagseg col-md-4">
                         <div class="col">
                             <h5>Detalhes da compra</h5>
                             <h6>{{$produto->nome_produto}}</h6>

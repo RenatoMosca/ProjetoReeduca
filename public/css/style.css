@@ -267,8 +267,11 @@ section.fundo-login{
 .tab-compra{
     margin-top: 30px;
 }
-.tab-pane h5,h6,img,button{
+.tab-pane h5,h6,button{
     margin-top: 15px;
+    margin-left: 60px;
+}
+.img-pagseg img{
     margin-left: 60px;
 }
 .tab-margem{

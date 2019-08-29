@@ -15,7 +15,7 @@
     <input type="text" class="form-control" id="nome_produto" name="nome_produto">
   </div>
 
- 
+
 <div class="form-group">
     <label for="desc_produto">Descrição</label>
     <textarea class="form-control" id="descricao" name="desc_produto" rows=""></textarea>
@@ -40,9 +40,9 @@
     <label for="publico_alvo"> Público-alvo</label>
     <input type="text" class="form-control" id="publico_alvo"  name="publico_alvo"></br>
 </div>
- 
+
 <div class="form-group">
-    <label for="ementa"> Ementa</label> 
+    <label for="ementa"> Ementa</label>
     <textarea class="form-control" id="ementa"  name="ementa" rows="5"></textarea>
 </div>
 
@@ -52,8 +52,12 @@
     <input type="file" class="form-control-file" id="url_img_prod" name="img_produto">
   </div>
 
+  <div class="form-group">
+    <label for="id_autor">Imagem</label>
+    <input type="file" class="form-control-file" id="url_img_prod" name="img_produto">
+  </div>
 
- 
+
 <button type="submit" id="botao_cadastrar" class="btn btn-primary" name="bt1">Cadastrar </button>
 
 <!-- com o javascript ajusta o botão -->
@@ -70,10 +74,9 @@
 
 
 
-  
 
- 
-  
 
-  
-    
+
+
+
+

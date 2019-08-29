@@ -11,6 +11,8 @@
 |
 */
 //rotas de visualização
+// {{Auth::user()->id}} -  para consumir usuário logado
+
 
 use App\Http\Controllers\Auth\LoginController;
 
@@ -44,11 +46,14 @@ Route::get('/cadastro', function () {
 Route::get('/remoney', function () {
     return view('remoney');
 });
+Route::get('/admin/admin-cards', function () {
+    return view('admin-cards');
+});
 Route::get('/loja', 'LojaController@exibirTodos');
 Route::get('/detalhe-produto/{id}', 'DetalheProdutoController@exibirProduto');
 Route::get('/detalhe-compra/{id}', 'DetalheCompraController@exibirProduto');
 
-Route::get('/pedido/{id}', 'PedidoController@create');
+Route::get('/pedido/{id}/{id_usuario}', 'PedidoController@create');
 
 Route::post('/logar', 'Auth\LoginController@logar');
 
