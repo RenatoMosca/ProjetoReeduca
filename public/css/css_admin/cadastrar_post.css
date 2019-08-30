@@ -1,5 +1,5 @@
 .form-group input{
-    width:50%;
+    width:100%;
 }
 
 .form-group textarea{
@@ -15,5 +15,5 @@
 }
 
 #botao_editar{
-    margin: 31px; 
+    margin: 31px;
 }

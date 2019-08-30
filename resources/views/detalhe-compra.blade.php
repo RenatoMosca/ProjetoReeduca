@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                <input type="hidden" name="comprador" value="{{Auth::user()->id}}">
+                                {{-- <input type="hidden" name="comprador" value="{{Auth::user()->id}}"> --}}
                                     <div class="row">
                                         <div class="col">
                                            <a href="/pedido/{{$produto->id_produto}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
@@ -84,11 +84,11 @@
                 <div class="row nomargin">
                     <div class="col-md-8">
                         <div class="col">
-                            <h5>Fique atento(a) ao vencimento do boleto. Você pode pagar o boleto em qualquer banco ou casa lotérica até o dia do vencimento!</h5>
-                            <h5>As compras efetuadas com boleto levam até 3 dias úteis para serem compensadas.</h5>
+                            <h6>Fique atento(a) ao vencimento do boleto. Você pode pagar o boleto em qualquer banco ou casa lotérica até o dia do vencimento!</h6>
+                            <h6>As compras efetuadas com boleto levam até 3 dias úteis para serem compensadas.</h6>
                         </div>
                         <div class="col">
-                        <a href="/pedido/{{$produto->id_produto}}/{{Auth::user()->id}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
+                        <a href="/pedido/{{$produto->id_produto}}/{{$user->id}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
                         </div>
                         <div class="col tab-margem">
                         </div>

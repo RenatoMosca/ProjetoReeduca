@@ -46,13 +46,13 @@
 									<button class="fa fa-bars"></button>
 									<h4>CATEGORIES</h4>
 								</div>
-								
+
 								<ul class="list-group list-group-bordered list-group-noicon uppercase">
 								@foreach($categorias as $categoria)
 									<li class="list-group-item"><a href="#">{{$categoria->nome_categoria}}</a></li>
 								@endforeach
 								</ul>
-								<!-- /side navigation -->						
+								<!-- /side navigation -->
 
 							</div>
 
@@ -63,27 +63,27 @@
 							<div class="hidden-xs margin-bottom-60">
 
 								<a class="tag" href="#">
-									<span class="txt">RESPONSIVE</span>
+									<span class="txt">lixo</span>
 									<span class="num">12</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">CSS</span>
+									<span class="txt">meio ambiente</span>
 									<span class="num">3</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">HTML</span>
+									<span class="txt">vidro</span>
 									<span class="num">1</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">JAVASCRIPT</span>
+									<span class="txt">natureza</span>
 									<span class="num">28</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">DESIGN</span>
+									<span class="txt">preservação</span>
 									<span class="num">6</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">DEVELOPMENT</span>
+									<span class="txt">sustentabilidade</span>
 									<span class="num">3</span>
 								</a>
 							</div>
@@ -126,7 +126,7 @@
 
             <div class="posts col-lg-9 ">
 
-                <div class="row">              
+                <div class="row">
                     <!--Primeiro Card do Blog-->
                     <div class="card_blog col-md-12 col-sm-12">
                         <img src="{{ asset($post->url_img_post)}}"  class="card-img-top" alt="Reciclagem">
@@ -135,7 +135,7 @@
                             <p class="card-text">{{$post->artigo}}</p>
                         </div>
                     </div>
-                  
+
                     <!-- Segundo Card do Blog -->
                     <!-- <div class="card_blog col-md-6 col-sm-6">
                         <img src="images/card_blog_2.jpg" class="card-img-top" alt="...">
@@ -147,11 +147,26 @@
 
                     </div> -->
                 </div>
-                
+                <hr>
+                <section>
+                    <h3>Comentários</h3>
+                    <div class="post-comentarios">
+                            <div class="col-md-2">
+                            <img src="/images/avatar-comentario.png" alt="avatar">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" value="kçdsfjçlakjfçlksjklj">
+                            </div>
+                            <div class="col-md-4"></div>
+                    </div>
+                </section>
+
 
             </div>
 
         </section>
+
+
     </main>
 
     @include ('footer')

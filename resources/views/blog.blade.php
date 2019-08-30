@@ -46,13 +46,13 @@
 									<button class="fa fa-bars"></button>
 									<h4>CATEGORIES</h4>
 								</div>
-								
+
 								<ul class="list-group list-group-bordered list-group-noicon uppercase">
 								@foreach($categorias as $categoria)
 									<li class="list-group-item"><a href="#">{{$categoria->nome_categoria}}</a></li>
 								@endforeach
 								</ul>
-								<!-- /side navigation -->						
+								<!-- /side navigation -->
 
 							</div>
 
@@ -148,7 +148,7 @@
 
                     </div> -->
                 </div>
-                
+
 
             </div>
 

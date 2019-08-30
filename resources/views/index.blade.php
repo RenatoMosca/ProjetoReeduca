@@ -25,29 +25,32 @@
   </a>
   <div class="container-texto">
     <div class="texto-fixo">
-      <h1>Reciclar, educar...</h1>        
-      
+      <h1>Reciclar, educar...</h1>
+
     </div>
     <div class="texto-fixo-2">
-      <h1>Você pode!</h1>        
-      
+      <h1>Você pode!</h1>
+
     </div>
 </div>
 </section>
 
 <!-- CONTEÚDO DA PÁGINA HOME -->
+
 <div class="callout">
- 
-    <div class="container">
-  <div>
-        <h2 class="display-6">Conheça nosso catálogo de Cursos</h2>   
-  </div> 
-  <div>      
-    <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
-  </div> 
-    
-  </div>
+<div class="container">
+    <div class="row">
+            <div class="col callout-green-text">
+                <h2>Conheça nosso catálogo de Cursos</h2>
+            </div>
+            <div class="col callout-green-button">
+                <button type="button" class="btn btn-success comece" onclick="javascript: location.href='loja';">Clique aqui</button>
+            </div>
+        </div>
+
+    </div>
 </div>
+
 <section>
     <div class="home-page">
         <div class="conteudo-texto col-lg-4">
@@ -64,30 +67,49 @@
     </div>
 </section>
 <hr>
-<section class="parceiros">
-<h4>Parceiros</h4>
-<table class="table table-borderless">
-  <tbody>
-    <tr>
-      <td><img src="{{ asset('images/1.jpg')}}" alt=""></td>
-      <td><img src="{{ asset('images/2.jpg')}}" alt=""></td>
-      <td><img src="{{ asset('images/3.jpg')}}" alt=""></td>
-      <td><img src="{{ asset('images/4.jpg')}}" alt=""></td>
-    </tr>
-  </tbody>
-</table>
-</section>
-<hr>
-<!-- Button trigger modal -->
-<div class="callout-newsletter">
-        <div class="container">
-            <p class="chamadaNewsletter">Assine nossa newsletter e ganhe um e-book!</p>
-            <input type="email" name="email-newsletter" placeholder="Digite seu e-mail">
-            <button type="button" class="btn btn-success">
-                Clique aqui
-            </button>
+
+
+<section class="parceiros text-center">
+    <h4>Parceiros</h4>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+          <img src="{{ asset('images/1.jpg')}}" alt="">
+        </div>
+      <div class="col">
+          <img src="{{ asset('images/2.jpg')}}" alt="">
+        </div>
+      <div class="col">
+          <img src="{{ asset('images/3.jpg')}}" alt="">
+        </div>
+      <div class="col">
+          <img src="{{ asset('images/4.jpg')}}" alt="">
+    </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+<div class="container callout-newsletter">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-6">
+                <p class="chamadaNewsletter">Assine nossa newsletter e ganhe um e-book!</p>
+          </div>
+          <div class="col col-lg-4">
+                <input class="form-control" type="email" name="email-newsletter" placeholder="Digite seu e-mail">
+          </div>
+          <div class="col col-lg-2">
+                <button type="button" class="btn btn-success">
+                        Clique aqui
+                    </button>
+          </div>
         </div>
 </div>
+
+
+
+
 
 
 
