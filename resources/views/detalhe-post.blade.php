@@ -147,9 +147,32 @@
 
                     </div> -->
                 </div>
+				<div class="comentario col-lg-8">
+				<h1 style="font-family: 'Cinzel', size:1m; serif;"> Deixe seu comentário</h1>
+				<form name="post_comentario" type="text" method="post" enctype="multipart/form-data" action="/admin/post_comentario>
+					<div class="form-group">
+						<label for="nome_autor_comentario">Nome:</label>
+						<input type="text" class="form-control" id="nome_autor_comentario" name="nome_autor_comentario" placeholder="Digite seu nome">
+					</div>
+						<div class="form-group">
+							<label for="url_img_comentario">Selecione sua imagem</label>
+							<input type="file" class="form-control-file" id="url_img_comentario" name="url_img_comentario">
+						</div>
+					<div class="form-group">
+						<label for="comentario">Comentário</label>
+						<textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
+					</div>
+					<button type="submit" id="botao_cadastrar_comentario" class="btn btn-primary" name="bt1">Enviar </button>
+				</form>
+			
+
+			
+			</div>
                 
 
             </div>
+
+			
 
         </section>
     </main>
