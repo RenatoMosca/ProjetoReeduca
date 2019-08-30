@@ -88,7 +88,7 @@
                             <h6>As compras efetuadas com boleto levam até 3 dias úteis para serem compensadas.</h6>
                         </div>
                         <div class="col">
-                        <a href="/pedido/{{$produto->id_produto}}/{{$user->id}}"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
+                        <a href="/pedido/{{$produto->id_produto}}/1"><button type="submit" class="btn btn-primary">Finalizar a compra</button></a>
                         </div>
                         <div class="col tab-margem">
                         </div>
