@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Post;
 use App\Categoria;
+use App\Post_comentario;
 use Illuminate\Http\Request;
 
 class DetalhePostController extends Controller
@@ -13,7 +14,8 @@ class DetalhePostController extends Controller
     public function exibirPost($id){
         $post = Post::find($id);
         $categorias = Categoria::all();
-        return view('detalhe-post',['post'=>$post], ['categorias'=>$categorias]);
+        $comentario = Post_comentario::where('id_post', "=", $id)->where('status', '=', 'ativo')->get();
+        return view('detalhe-post',['post'=>$post, 'posts_comentarios'=>$comentario], ['categorias'=>$categorias]);
 
     }
 

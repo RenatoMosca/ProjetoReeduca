@@ -147,22 +147,47 @@
 
                     </div> -->
                 </div>
-                <hr>
-                <section>
-                    <h3>Comentários</h3>
-                    <div class="post-comentarios">
-                            <div class="col-md-2">
-                            <img src="/images/avatar-comentario.png" alt="avatar">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" value="kçdsfjçlakjfçlksjklj">
-                            </div>
-                            <div class="col-md-4"></div>
-                    </div>
-                </section>
+				<div class="comentario col-lg-8">
+				<h1 style="font-family: 'Cinzel', size:1m; serif;"> Deixe seu comentário</h1>
+				<form name="post_comentario" type="text" method="post" enctype="multipart/form-data" action="/admin/post_comentario">
+						@csrf
+					<input type="hidden" name="idpost" value="{{$post->id_post}}">
+					<div class="form-group">
+						<label for="nome_autor_comentario">Nome:</label>
+						<input type="text" class="form-control" id="nome_autor_comentario" name="nome_autor_comentario" placeholder="Digite seu nome">
+					</div>
+
+					<div class="form-group">
+						<label for="comentario">Comentário</label>
+						<textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
+					</div>
+					<button type="submit" id="botao_cadastrar_comentario" class="btn btn-primary" name="bt1"> Enviar </button>
+				</form>
+				<h2 style="font-family: 'Cinzel', size:1m; serif;"> Comentários</h2>
+				@foreach($posts_comentarios as $post_comentario)
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+						<img src="../images/avatar.jpg" class="card-img" alt="foto de perfil">
+						</div>
+						<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">{{$post_comentario->nome_autor_comentario}}</h5>
+							<p class="card-text">{{$post_comentario->comentario}}</p>
+							<p class="card-text"><small class="text-muted">{{$post_comentario->dt_inclusao}}</small></p>
+						</div>
+						</div>
+					</div>
+				</div>
+				@endforeach
+
+
+			</div>
 
 
             </div>
+
+
 
         </section>
 

@@ -79,6 +79,7 @@ Route::post('/admin/post/editar_post/{id}', 'PostController@update');
 Route::get('/blog','PostController@exibirTodosBlog');
 Route::get('/blog','PostController@exibirTodosBlog');
 Route::get('/detalhe-post/{id}', 'DetalhePostController@exibirPost');
+Route::post('/detalhe-post/{id}', 'DetalhePostController@exibirPost');
 // Route::get('/admin/post/cadastro', 'PostController@cadastrar');
 // Route::post('/admin/post/cadastrar_post', 'PostController@create');
 // Route::get('/admin/post/remover_post/{id}', 'PostController@delete');

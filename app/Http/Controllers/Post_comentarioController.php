@@ -39,7 +39,7 @@ class Post_comentarioController extends Controller
             $name = kebab_case($request->name).uniqid($post_comentario->id);
             $extension = $request->url_img_comentario->extension();
             $nameImagem = "{$name}.$extension";
-            $date['url_img_comentario'] = $nameImagem;
+            $post_comentario->url_img_comentario = $nameImagem;
 
 
             $upload = $request->url_img_comentario->storeAs('fotosComentarios', $nameImagem);
@@ -47,7 +47,7 @@ class Post_comentarioController extends Controller
         }
 
        // $post_comentario->update($date);
-            return redirect('/admin/post_comentario');
+            return redirect("/detalhe-post/$request->idpost");
     }
 
     public function delete($id) {
