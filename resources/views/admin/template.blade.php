@@ -88,7 +88,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/admin/cadastrar_categoria">
+        <a class="nav-link collapsed" href="/admin/categoria">
           <i class="fas fa-fw fa-cog"></i>
           <span>Categorias</span>
         </a>

@@ -87,8 +87,8 @@ Route::post('/detalhe-post/{id}', 'DetalhePostController@exibirPost');
 // Route::get('/admin/post/editar_post/{id}', 'PostController@edit');
 // Route::post('/admin/post/editar_post/{id}', 'PostController@update');
 
-Route::get('/admin/categoria','CategoriaController@cadastrarCategoria');
-Route::post('/admin/post', 'CategoriaController@create');
+// Route::get('/admin/categoria','CategoriaController@cadastrarCategoria');
+// Route::post('/admin/post', 'CategoriaController@create');
 
 
 
@@ -120,6 +120,16 @@ Route::get('/admin/autor/remover_autor/{id}', 'AutorController@delete');
 
 Route::get('/admin/autor/editar_autor/{id}', 'AutorController@edit');
 Route::post('/admin/autor/editar_autor/{id}', 'AutorController@update');
+
+
+//controller categoria
+Route::get('/admin/categoria', 'CategoriaController@exibirTodos');
+Route::get('/admin/categoria/cadastro', 'CategoriaController@cadastrar');
+Route::post('/admin/categoria/cadastrar_categoria', 'CategoriaController@create');
+Route::get('/admin/categoria/remover_categoria/{id}', 'CategoriaController@delete');
+
+Route::get('/admin/categoria/editar_categoria/{id}', 'CategoriaController@edit');
+Route::post('/admin/categoria/editar_categoria/{id}', 'CategoriaController@update');
 
 //controller produto
 Route::get('/admin/produto', 'ProdutoController@exibirTodos');
