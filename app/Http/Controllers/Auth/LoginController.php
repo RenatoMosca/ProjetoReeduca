@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = "/";
 
     /**
      * Create a new controller instance.
@@ -36,8 +36,11 @@ class LoginController extends Controller
      * @return void
      */
     public function __construct()
+
     {
+
         $this->middleware('guest')->except('logout');
+
     }
 
     public function logar(Request $request){
@@ -55,6 +58,12 @@ class LoginController extends Controller
                 // } else {
                 //     return redirect ('/');
                 // }
+
+                if($request->session()->has('intencao-compra')){
+
+                    $id = $request->session()->get('intencao-compra');
+                    return redirect('/detalhe-compra/'.$id);
+                }
                 return redirect ('/');
             }
         } else {

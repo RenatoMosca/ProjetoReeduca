@@ -63,7 +63,7 @@
                                 {{-- <input type="hidden" name="comprador" value="{{Auth::user()->id}}"> --}}
                                     <div class="row">
                                         <div class="col">
-                                           <a href="/pedido/{{$produto->id_produto}}/{{auth()->user()->id}}"><button class="btn btn-primary">Finalizar a compra</button></a>
+                                           <a  class="btn btn-primary" href="/pedido/{{$produto->id_produto}}/{{auth()->user()->id}}">Finalizar a compra</a>
                                         </div>
                                     </div>
                                     <br>
