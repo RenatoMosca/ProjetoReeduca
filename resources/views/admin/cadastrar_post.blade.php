@@ -36,28 +36,15 @@
     <label for="artigo">Artigo </label>
     <textarea class="form-control" id="artigo" name="artigo" rows=""></textarea>
   </div>
-
-  <ul>
-    <li class="dropdown">
-        <a href="#" data-toggle="dropdown" name="categoria"class="dropdown-toggle">Categorias<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox">Two
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox">Two
-                    </label>
-                </div>
-            </li>
-        </ul>
-    </li>
-</ul>
+  <div class="form-group">
+    <label for="selectCategoria" name="categoria">Categoria</label>
+    <select class="form-control" id="selectCategoria">
+    @foreach($categorias as $categoria)
+    <option value= "{{$categoria->id_categoria}}">{{$categoria->nome_categoria}}</option>     
+    @endforeach
+    </select>
+  </div>
+ 
  
 
  

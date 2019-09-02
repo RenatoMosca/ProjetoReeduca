@@ -23,7 +23,7 @@
           </div>
 
           <div class="botao_login">
-            <button type="button" class="button">Fazer Login</button>
+            <button type="button" class="btn-success">Fazer Login</button>
           </div>
         </form>
       </div>

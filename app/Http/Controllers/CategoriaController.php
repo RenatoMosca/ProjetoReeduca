@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 use App\Categoria;
+
 use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
 {
-
-    //método exibir todos
-
     public function exibirTodos(){
         $categorias = Categoria::all();
         return view('admin.categoria',['categorias'=>$categorias]);
@@ -46,6 +44,4 @@ class CategoriaController extends Controller
         $categorias -> delete();
         return redirect('/admin/categoria');
     }
-
-
 }

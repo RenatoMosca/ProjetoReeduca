@@ -103,7 +103,7 @@ Route::post('/admin/autor/editar_autor/{id}', 'AutorController@update');
 
 
 //controller categoria
-Route::get('/admin/categoria', 'CategoriaController@exibirTodos');
+Route::get('/admin/categoria','CategoriaController@exibirTodos');
 Route::get('/admin/categoria/cadastro', 'CategoriaController@cadastrar');
 Route::post('/admin/categoria/cadastrar_categoria', 'CategoriaController@create');
 Route::get('/admin/categoria/remover_categoria/{id}', 'CategoriaController@delete');
