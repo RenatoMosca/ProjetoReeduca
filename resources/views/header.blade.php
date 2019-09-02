@@ -31,7 +31,7 @@
             <a class="nav-link" href="/blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">EAD</a>
+            <a class="nav-link" href="http://reeduca.amtsol.com.br/moodle" target="_blank">EAD</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contato">Contato</a>

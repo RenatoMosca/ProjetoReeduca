@@ -50,6 +50,11 @@ class LoginController extends Controller
                 return redirect ('/admin');
             } else {
                 Auth::loginUsingId($usuario[0]->id, TRUE);
+                // if ($idproduto <> 0){
+                //     return redirect ('/detalhe-compra/{$idproduto}');
+                // } else {
+                //     return redirect ('/');
+                // }
                 return redirect ('/');
             }
         } else {

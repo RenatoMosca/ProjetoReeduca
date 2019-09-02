@@ -15,7 +15,7 @@ class ProdutoController extends Controller
     }
 
     public function exibirTodosLoja(){
-        $posts = Produto::all();
+        $produtos = Produto::all();
         return view('loja',['produtos'=>$produtos]);
     }
 
