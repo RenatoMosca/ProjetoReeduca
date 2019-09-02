@@ -15,8 +15,7 @@ class PedidoController extends Controller
     protected function create(request $data){
         $pedido = Pedido::create([
             'status' => 'aguardando pagamento',
-            // 'id' => Auth::user()->id,
-            'id' => 1,
+            'id' => $data->id_usuario,
             'forma_pagto' => 'cartao',
             'nr_parcelas' => 0,
         ]);

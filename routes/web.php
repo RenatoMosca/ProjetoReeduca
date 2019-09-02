@@ -10,9 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//rotas de visualização
-// {{Auth::user()->id}} -  para consumir usuário logado
-
 
 use App\Http\Controllers\Auth\LoginController;
 
@@ -58,6 +55,8 @@ Route::get('/pedido/{id}/{id_usuario}', 'PedidoController@create');
 Route::post('/logar', 'Auth\LoginController@logar');
 
 
+
+
 //Controllers Admin: Post do Blog
 
 //visualização do painel admin
@@ -80,25 +79,6 @@ Route::get('/blog','PostController@exibirTodosBlog');
 Route::get('/blog','PostController@exibirTodosBlog');
 Route::get('/detalhe-post/{id}', 'DetalhePostController@exibirPost');
 Route::post('/detalhe-post/{id}', 'DetalhePostController@exibirPost');
-// Route::get('/admin/post/cadastro', 'PostController@cadastrar');
-// Route::post('/admin/post/cadastrar_post', 'PostController@create');
-// Route::get('/admin/post/remover_post/{id}', 'PostController@delete');
-
-// Route::get('/admin/post/editar_post/{id}', 'PostController@edit');
-// Route::post('/admin/post/editar_post/{id}', 'PostController@update');
-
-// Route::get('/admin/categoria','CategoriaController@cadastrarCategoria');
-// Route::post('/admin/post', 'CategoriaController@create');
-
-
-
-
-
-
-
-
-
-
 //Controllers Admin: Comentários do Blog
 //visualizar todos
 Route::get('/admin/post_comentario', 'Post_comentarioController@exibirTodosComentarios');
