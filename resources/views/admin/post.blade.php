@@ -3,12 +3,14 @@
 
 @section('conteudo_admin')
 @if(isset($posts))
-    <div class="row">
-        <div class="col-md-8">
-            <h3>Cadastro de Posts</h3>
+<div class="row">
+        <div class="col-md-1">
         </div>
-        <div class="col-md-4">
-            <a href="/admin/post/cadastro"><button type="button" class="btn btn-primary">Adicionar</button></a>
+        <div class="col-md-9">
+            <h3>Cadastro de Categoria</h3>
+        </div>
+        <div class="col-md-2">
+        <a href="/admin/post/cadastro"><button type="button" class="btn btn-primary">Adicionar</button></a>
         </div>
     </div>
     <table class="table table-striped">

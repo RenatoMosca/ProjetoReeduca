@@ -23,7 +23,7 @@ class Post extends Migration
             $table->text('artigo')->nullable(false);
             $table->bigInteger('id_categoria')->unsigned();
             $table->timestamps();
-            $table->foreign('id_categoria')->references('id_categoria')->on('categoria');
+            $table->foreign('id_categoria')->references('id_categoria')->on('categoria')->onDelete('cascade');
             
 
         });

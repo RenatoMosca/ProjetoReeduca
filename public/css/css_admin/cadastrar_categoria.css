@@ -1,0 +1,19 @@
+.form-group input{
+    width:100%;
+}
+
+.form-group textarea{
+    width: 50%;
+}
+
+.form-group{
+    margin: 31px;
+}
+
+#botao_cadastrar{
+    margin: 31px;
+}
+
+#botao_editar{
+    margin: 31px;
+}

@@ -449,8 +449,9 @@ section.fundo-login{
 
 /* PÁGINA CONTATO */
 .imagem_fundo_contato{
-    background-image: url('../images/bg-contato.jpg');
+    background-image: url('../images/fundo-contato.jpg');
     background-size: 1400px;
+    background-position: right;
 }
 .ladoDireito{
     padding-top: 52px;
@@ -472,6 +473,43 @@ section.fundo-login{
     padding-bottom: 74px;
     padding-top: 27px;
 }
+
+.text-contato{
+    font-size: 23px;       
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+    
+.input-contato{
+    color: white;
+    background: transparent;
+    border-radius: 6px;
+    height: 36px;
+    text-align: center;
+    }
+    .input-contato::-webkit-input-placeholder{
+    color: white;
+}
+    .botao_contato>button{
+        width: 116px;
+        height: 45px;
+        border-radius: 11px;
+        color: #fff;
+        background-color: rebeccapurple;
+        border-color: rebeccapurple;
+        font-size: 1em;
+        text-transform: uppercase;
+        margin: 0;
+        border:none;
+    }
+    #h1-contato{
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        margin-left: 92px;
+        text-decoration: overline;
+
+    }
+
 /* FINAL PÁGINA CONTATO */
 
 /* FOOTER */
@@ -505,7 +543,10 @@ footer {
         overflow: auto;
         display: none;
     }
-
+    #h1-contato{
+        text-align: left;
+        margin: 0;
+    }
 
     }
 

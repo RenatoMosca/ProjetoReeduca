@@ -18,13 +18,14 @@ class PostController extends Controller
     public function exibirTodosBlog(){
         $posts = Post::all();
         $categorias = Categoria::all();
-        return view('blog',['posts'=>$posts], ['categorias'=>$categorias]);
+        return view('blog',['posts'=>$posts, 'categorias'=>$categorias]);
     }
      
     //método cadastrar posts
     public function cadastrar(){
+        $categorias = Categoria::all();
           
-         return view('admin.cadastrar_post');
+         return view('admin.cadastrar_post', ['categorias'=>$categorias]);
      }
     
      

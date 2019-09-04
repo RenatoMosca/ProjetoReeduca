@@ -127,6 +127,18 @@
 
 /* FINAL PÁGINA SOBRE  */
 
+/* PÁGINA CADASTRAR */
+
+
+
+
+
+
+
+
+
+
+
 /* PÁGINA LOJA */
 .display-4{
     font-family: 'Cinzel', serif;
@@ -235,7 +247,6 @@ footer {
     color: white;
 }
 
-<<<<<<< HEAD
 @media  (max-width: 780px) {
     .home-page {
       background: none;
@@ -245,7 +256,6 @@ footer {
     .imgcarrossel {
         height: 242px;
     }
-=======
 p {
     font-family: 'Alegreya', serif;
     font-size: 1.2em; 
@@ -254,5 +264,4 @@ p {
 h2 {
     font-family: 'Cinzel', serif;
     font-size: 2.2em;
->>>>>>> 75644b265d403208f5385032ef9899670ff44eb8
 }
