@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 // namespace App\Http\Controllers\Auth;
+
+use App\Mail\BoasVindasEmail;
 use App\Pedido;
 // use App\Itens_Pedido;
 // use App\Http\Controllers\Controller;
@@ -28,24 +30,29 @@ class PedidoController extends Controller
                 'action' => 'create_user',
                 'username' => auth()->user()->email,
                 'first_name' => auth()->user()->name,
-                'last_name' => '.',
+                'last_name' => ' - EAD',
                 'email' => auth()->user()->email,
-                // 'password' => $user->moodle_password,
                 'password' => 'Reeduca@2019',
                 'city' => auth()->user()->cidade,
             ]
         ]);
 
+        //recupera id do usuário criado no AVA Moodle
+        $user = \Auth::user();
+        $user->moodle_user_id = $response->getBody()->getContents();
+
         //matricular no curso
-        $client = new Client();
-        $response = $client->request('POST', "reeduca.amtsol.com.br/moodle/_services/response.php", [
+        $client1 = new Client();
+        $response1 = $client1->request('POST', "reeduca.amtsol.com.br/moodle/_services/response.php", [
             'form_params' => [
                 'action' => 'create_enrollment',
-                'moodle_course_id' => 1,
-                'moodle_user_id' => $data->id_usuario,
+                'moodle_course_id' => 2,
+                'moodle_user_id' => $user->moodle_user_id
             ]
         ]);
 
+        //envio de e-mail de Boas Vindas
+        \Mail::to('renato@amtsol.com.br')->send(new BoasVindasEmail(auth()->user()->email, 'Reeduca@2019', auth()->user()->name));
 
         return view('pedido',['pedido'=>$pedido]);
 
