@@ -52,10 +52,6 @@
     <input type="file" class="form-control-file" id="url_img_prod" name="img_produto">
   </div>
 
-  <div class="form-group">
-    <label for="id_autor">Imagem</label>
-    <input type="file" class="form-control-file" id="url_img_prod" name="img_produto">
-  </div>
 
 
 <button type="submit" id="botao_cadastrar" class="btn btn-primary" name="bt1">Cadastrar </button>

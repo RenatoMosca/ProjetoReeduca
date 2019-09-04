@@ -44,7 +44,7 @@
 
 								<div class="side-nav-head">
 									<button class="fa fa-bars"></button>
-									<h4>CATEGORIES</h4>
+									<h4>CATEGORIAS</h4>
 								</div>
 
 								<ul class="list-group list-group-bordered list-group-noicon uppercase">

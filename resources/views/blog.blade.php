@@ -44,7 +44,7 @@
 
 								<div class="side-nav-head">
 									<button class="fa fa-bars"></button>
-									<h4>CATEGORIES</h4>
+									<h4>CATEGORIAS</h4>
 								</div>
 
 								<ul class="list-group list-group-bordered list-group-noicon uppercase">
@@ -63,31 +63,30 @@
 							<div class="hidden-xs margin-bottom-60">
 
 								<a class="tag" href="#">
-									<span class="txt">RESPONSIVE</span>
+									<span class="txt">lixo</span>
 									<span class="num">12</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">CSS</span>
+									<span class="txt">meio ambiente</span>
 									<span class="num">3</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">HTML</span>
+									<span class="txt">vidro</span>
 									<span class="num">1</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">JAVASCRIPT</span>
+									<span class="txt">natureza</span>
 									<span class="num">28</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">DESIGN</span>
+									<span class="txt">preservação</span>
 									<span class="num">6</span>
 								</a>
 								<a class="tag" href="#">
-									<span class="txt">DEVELOPMENT</span>
+									<span class="txt">sustentabilidade</span>
 									<span class="num">3</span>
 								</a>
 							</div>
-
 
 							<!-- SOCIAL ICONS -->
 							<div class="hidden-xs margin-top-30 margin-bottom-60">
